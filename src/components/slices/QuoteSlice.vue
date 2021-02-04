@@ -14,7 +14,8 @@ export default {
 <style scoped>
 .quote blockquote {
   display: block;
-  font-family: 'Lora', Serif; 
+  /*font-family: 'Lora', Serif;*/
+  font-family: Haas Grot Disp;  
   font-size: 36px;
   font-style: italic;
   font-weight: normal; 
@@ -28,7 +29,8 @@ export default {
 .quote blockquote:after {
   color: #e9e9e9;
   content: open-quote;
-  font-family: 'Lora', Serif;
+  /*font-family: 'Lora', Serif;*/
+  font-family: Haas Grot Disp; 
   font-size: 2.5em;
   font-weight: 900;
   line-height: 0.1em;
@@ -40,7 +42,7 @@ export default {
   content: close-quote;
 }
 /* Media Queries */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .quote {
     font-size: 20px;
   }
