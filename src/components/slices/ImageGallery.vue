@@ -30,29 +30,26 @@ export default {
    flex-wrap: wrap;
   -webkit-justify-content: space-between; 
   justify-content: space-between; 
-  
 }
 .gallery-item {
-  -webkit-box-flex: 0 1 30%;
-  -moz-box-flex:  0 1 30%;
-  -webkit-flex:  0 1 30%;
-  -ms-flex:  0 1 30%;
-  flex: 0 1 30%;
-  
+  -webkit-box-flex: 0 1 48%;
+  -moz-box-flex:  0 1 48%;
+  -webkit-flex:  0 1 48%;
+  -ms-flex:  0 1 48%;
+  flex: 0 1 48%;
 }
 .gallery-link {
   margin-top: -20px;
   text-transform: uppercase;
 }
 /* Media Queries */
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .gallery-item {
-    
-    -webkit-box-flex:auto;
-    -moz-box-flex:  auto;
-    -webkit-flex:  auto;
-    -ms-flex:  auto;
-    flex: auto;
+    -webkit-box-flex: 100%;
+    -moz-box-flex:  100%;
+    -webkit-flex:  100%;
+    -ms-flex:  100%;
+    flex: 100%;
   }
 }
 </style>
