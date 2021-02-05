@@ -97,25 +97,29 @@ export default {
   color:white;
   font-size: 16pt;
   font-weight: lighter;
+  
 }
 
 /* Media Queries */
 @media (max-width: 320px) {
   .gallery-item {
-    padding: 50px;
-    display: block;
+    padding: 30px;
+    display: fit-content;
     flex-direction: column;
   
   }
   .description1{
     
-    max-width:150px;
+    max-width:200px;
+    max-height: 100px;
   }
     .description2{
-    max-width:150px;
+    max-width:200px;
+      max-height: 150px;
   }
     .description3{
-    max-width:150px;
+    max-width:200px;
+    max-height: 200px;
   }
   .title1{
     font-size: 18px;
@@ -125,6 +129,7 @@ export default {
   }
   .title3{
     font-size: 20px;
+    
   }
   .desc1{
     
@@ -137,27 +142,36 @@ export default {
  .desc3{
     
   font-size: 10px;
+  line-height: 2;
+ 
 }
+
+
+
 }
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
  {
    .gallery-item {
-    padding: 90px;
+    padding: 60px;
     display: block;
     flex-direction: column;
   
   }
   .description1{
     
-    max-width:150px;
+    max-width:200px;
+    max-height: 100px;
   }
     .description2{
-    max-width:150px;
+      max-width:200px;
+      max-height: 150px;
   }
     .description3{
-    max-width:150px;
+    max-width:200px;
+    max-height: 200px;
+    line-height: 80%;
   }
   .title1{
     font-size: 18px;

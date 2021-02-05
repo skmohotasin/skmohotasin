@@ -82,6 +82,10 @@
             <template v-else-if="slice.slice_type === 'contact_slice'">
                 <contact-slice :slice="slice"/>
             </template>
+             <!-- Description Slideshow Slice component -->
+            <template v-else-if="slice.slice_type === 'slideshow_slice'">
+                <slideshow-slice :slice="slice"/>
+            </template>
             
             
         </section>
@@ -110,7 +114,7 @@ const StorySlice = () => import("./slices/StorySlice.vue");
 const FormSlice = () => import("./slices/FormSlice.vue");
 const ImagesSlider = () => import("./slices/ImagesSlider.vue");
 const ContactSlice = () => import("./slices/ContactSlice.vue");
-
+const SlideshowSlice = () => import("./slices/SlideshowSlice.vue");
 
 export default {
   props: ['slices'],
@@ -136,6 +140,7 @@ export default {
     FormSlice,
     ImagesSlider,
     ContactSlice,
+    SlideshowSlice
     
   },
 }

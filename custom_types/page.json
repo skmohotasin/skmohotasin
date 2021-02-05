@@ -995,6 +995,23 @@
                 }
               },
               "repeat" : { }
+            },
+            "slideshow_slice" : {
+              "type" : "Slice",
+              "fieldset" : "Slide Show Slice",
+              "description" : "Slide Show Slice",
+              "icon" : "star",
+              "non-repeat" : {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph, heading6, strong",
+                    "label": "Text",
+                    "placeholder": "text"
+                  }
+                }
+              },
+              "repeat" : { }
             }
 
           } 
