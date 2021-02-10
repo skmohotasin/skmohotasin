@@ -44,8 +44,6 @@ export default function (type, element, content, children) {
     return result
   }
 
-  
-
   // Return null to stick with the default behavior for everything else
   return null
 }

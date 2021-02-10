@@ -28,7 +28,7 @@ export default {
   margin-bottom: 0;
 }
 /* Media Queries */
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .text-section-2col {
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */

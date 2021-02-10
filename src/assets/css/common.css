@@ -8,19 +8,16 @@
   background: #FFF7C7; /* Gecko Browsers */
 }
 
-
-
 /*
  * Globals
  */
 body {
-  padding: 0px;
+  padding: 20px;
   color: #72767b;
-  /* font-family: 'Lato', sans-serif;*/
-  font-family: Haas Grot Disp; 
-  font-size: 16pt;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  letter-spacing : 0.9px;
+  letter-spacing : 0.4px;
   line-height: 28px;
 }
 a {
@@ -32,18 +29,16 @@ a {
   text-decoration: none;
 }
 p a {
-  /*text-decoration: underline;*/
+  text-decoration: underline;
 }
 h2, h3, h4, h5, h6 {
-  /*font-family: 'Lato', sans-serif;*/
-  font-family: Haas Grot Disp; 
+  font-family: 'Lato', sans-serif;
 }
 h1 {
-  /*font-family: ‘Lora’, Serif;*/
-  font-family: Haas Grot Disp;  
-  font-size: 40pt; 
+  font-family: ‘Lora’, Serif; 
+  font-size: 42px; 
   font-weight: normal; 
-  color: white; 
+  color: #484D52; 
   line-height: 52px; 
   letter-spacing : 1.14px;
   margin-bottom: 1rem;
@@ -51,7 +46,7 @@ h1 {
 h2, h2 a {
   margin-bottom: 1rem;
   color: #484d52;
-  font-size: 16pt;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing : 0.85px;
   line-height: 42px;
@@ -59,12 +54,12 @@ h2, h2 a {
 h3, h3 a {
   margin-bottom: 1rem;
   Color: #484d52;
-  font-size: 16pt;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing : 0.52px;
   line-height: 34px;
 }
- p,pre, ul, ol {
+p, pre, ul, ol {
   margin-bottom: 2rem;
 }
 ul {
@@ -79,7 +74,7 @@ strong {
   font-weight: bold;
 }
 em {
-  /*font-style: italic;*/
+  font-style: italic;
 }
 img {
   max-width: 100%;
@@ -127,8 +122,6 @@ img {
   font-size: 24px;
 }
 /* Media Queries */
-
-
 @media (max-width: 767px) {
   h1 {
     font-size: 32px;
@@ -138,14 +131,9 @@ img {
     font-size: 26px;
   }
   h3 {
-    font-size: 12px;
-    line-height: 20px;
-    
-    
-    
+    font-size: 18px;
   }
   .content-section {
     margin-bottom: 2rem;
   } 
 }
-
