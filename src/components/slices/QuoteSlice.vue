@@ -14,11 +14,12 @@ export default {
 <style scoped>
 .quote blockquote {
   display: block;
-  font-family: 'Lora', Serif; 
-  font-size: 36px;
+  /*font-family: 'Lora', Serif;*/
+  font-family: Haas Grot Disp;  
+  font-size: 30px;
   font-style: italic;
-  font-weight: normal; 
-  color: #484D52; 
+  font-weight:bold; 
+  color: #5b146f; 
   letter-spacing : 1.14;
   line-height: 1.5em;
   quotes: "\201C""\201D""\2018""\2019";
@@ -26,9 +27,10 @@ export default {
 }
 .quote blockquote:before,
 .quote blockquote:after {
-  color: #e9e9e9;
+  color: #5b146f;
   content: open-quote;
-  font-family: 'Lora', Serif;
+  /*font-family: 'Lora', Serif;*/
+  font-family: Haas Grot Disp; 
   font-size: 2.5em;
   font-weight: 900;
   line-height: 0.1em;
@@ -40,7 +42,7 @@ export default {
   content: close-quote;
 }
 /* Media Queries */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .quote {
     font-size: 20px;
   }

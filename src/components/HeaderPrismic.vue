@@ -1,6 +1,9 @@
 <template>
   <header class="site-header">
-    <router-link to="/" class="logo">Example Site</router-link>
+    <router-link to="/" class="logo">
+    
+    
+    </router-link>
     <nav>
       <ul>
         <li v-for="menuLink in menuLinks" :key="menuLink.id">
@@ -13,6 +16,7 @@
 
 <script>
 export default {
+  
   name: 'HeaderPrismic',
   data () {
     return {
@@ -33,6 +37,8 @@ export default {
   created () {
     this.getMenu()
   }
+
+  
 }
 </script>
 
@@ -40,22 +46,26 @@ export default {
 /* Site header */
 .site-header {
   height: 30px;
-  padding: 20px 0;
+  padding: 0px 0;
+  
 }
 .site-header,
 .site-header a {
+  
   color: #484d52;
   font-weight: 700;
+  
 }
 .site-header nav a:hover {
   color: #72767B;
 }
 .homepage .site-header,
 .homepage .site-header a {
-  color: #ffffff;
+  color:white;
+
 }
 .homepage .site-header nav a:hover {
-  color: #c8c9cb;
+  color: #1052d6;
 }
 .site-header .logo {
   display: inline-block;
@@ -73,35 +83,65 @@ export default {
   margin-left: 40px;
 }
 
-/* Media Queries */
-@media (max-width: 1060px) {
-  .site-header {
-    padding-left: 20px;
-    padding-right: 20px;
+.homepage-banner {
+ background:linear-gradient(to top left, #ff009c,#5b146f,#00a9ff,#ffd515);
+    max-width: 5000px;
+    margin: auto;
+    max-height: 2000px;
+    background-size:cover;
+    background-blend-mode: hard-light;
+    
+   
+    animation: hue-rotate alternate-reverse 5s infinite;
+    
+    
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+    opacity: 0.7;
+    
+    
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    opacity: 0.9;
   }
 }
-@media (max-width: 767px) {
-  .site-header {
-    height: auto;
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+ .site-header nav li {
+   
+    margin-block-end: 0px;
   }
-  .homepage .site-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  .site-header .logo {
-    display: block;
-    text-align: center;
-  }
-  .site-header nav {
-    float: none;
-    text-align: center;
-  }
-  .site-header nav li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+
+.homepage .site-header,
+.homepage .site-header a {
+  font-size: 10px;
+  padding: 10px;
+  padding-top: 0px;
 }
+.homepage .site-header a {
+ 
+  padding-inline-end: 0px;
+  
+}
+.site-header nav li {
+   display: inline;
+   margin-left:0px;
+   margin-right: 0px;
+}
+}
+
 </style>
 

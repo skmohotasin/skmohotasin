@@ -34,10 +34,10 @@ export default {
   float: right;
 }
 /* Media Queries */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .highlight-left,
   .highlight-right {
-    width: 100%;
+    width: 70%;
     float: none;
   }
 }

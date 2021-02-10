@@ -49,13 +49,13 @@ export default {
 }
 .text{
   font-weight: bolder;
-  color:red;
+  color:#ff009c;
   font-size:10pt;
 }
 .testing{
- color:purple;
+ color:#5b146f;
  font-weight: bolder;
- font-size: 50pt;
+ font-size: 36pt;
 }
 
 .aboutbutton {
@@ -69,6 +69,9 @@ export default {
 }
 .aboutbutton:hover {
   background: #c8c9cb;
+}
+.description{
+  color:Red;
 }
 
 

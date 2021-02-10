@@ -50,40 +50,49 @@ export default {
   margin: 20px;
   text-align: center;
   font-size: 30px;
-  padding: 10px;
+  padding: 25px;
   
 }
 .description1{
-  background-color: palevioletred;
+  background-color: #ff009c;
+  border-radius: 25px;
   padding-left:10px;
   padding-right:10px;
+  
+  
 }
 .description2{
-  background-color: DodgerBlue;
+  background-color: #00a9ff;
+  border-radius: 25px;
   padding-left:10px;
   padding-right:10px;
   
 }
 .description3{
-  background-color: purple;
+  background-color: #5b146f;
+  border-radius: 25px;
   padding-left:10px;
   padding-right:10px;
+  line-height: 2em;
 }
 .title1{
   font-weight: bolder;
   color: white;
   font-size: 30pt;
   padding-bottom: 0px;
+  line-height: 1em;
 }
 .title2{
   font-weight: bolder;
   color: white;
   font-size: 30pt;
+  line-height: 1em;
 }
 .title3{
   font-weight: bolder;
   color: white;
   font-size: 30pt;
+  line-height: 1em;
 }
 .desc1{
   color:white;

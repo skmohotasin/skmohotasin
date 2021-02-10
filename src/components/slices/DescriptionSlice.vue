@@ -38,17 +38,18 @@ export default {
 
 .text{
   font-weight: bolder;
-  color:red;
+  color:#ff009c;
   font-size:10pt;
   text-align: center;
 }
 .testing{
- color:purple;
+ color:#5b146f;
  font-weight: bolder;
  font-size: 50pt;
  text-align: center;
  
 }
+
 
 .button {
   background:white;
@@ -62,14 +63,12 @@ export default {
   position: absolute;
   top: 120%;
   left: 50%;
-  margin-right: -50%;
+  
   transform: translate(-50%, -50%)
 }
 .button:hover {
   background: #c8c9cb;
 }
-
-
 /* Media Queries */
 @media (max-width: 320px) {
  

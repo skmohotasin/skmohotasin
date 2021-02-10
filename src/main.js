@@ -4,6 +4,8 @@ import linkResolver from './prismic/link-resolver'
 import htmlSerializer from './prismic/html-serializer'
 import App from './App.vue'
 import router from './router'
+import VueSplide from '@splidejs/vue-splide';
+
 
 Vue.config.productionTip = false
 
@@ -13,7 +15,16 @@ Vue.use(PrismicVue, {
   htmlSerializer
 })
 
+Vue.use( VueSplide );
+
 new Vue({
   router,
   render: h => h(App)
-}).$mount('#app')
+},
+
+{
+  el    : '#app',
+  render: h => h( App ),
+}
+
+).$mount('#app')

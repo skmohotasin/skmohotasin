@@ -22,16 +22,16 @@
 
   <div class="containerr">
   
-<counter2>
-      <prismic-rich-text class="text1" :field="slice.primary.text1"/>
+<counter2 style="line-height:0em">
+      <prismic-rich-text  style="font-size:20px;color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
     </counter2>
 
-    <counter6>
-      <prismic-rich-text class="text5" :field="slice.primary.text5"/>
+    <counter6 style="line-height:0em">
+      <prismic-rich-text  style="font-sixe:20px;color:white;padding-right:50px" class="text5" :field="slice.primary.text5"/>
     </counter6>
 
-    <counter4>
-      <prismic-rich-text class="text11" :field="slice.primary.text11"/>
+    <counter4 style="line-height:0em">
+      <prismic-rich-text  style="font-sixe:20px;color:white; padding-right:30px" class="text11" :field="slice.primary.text11"/>
     </counter4>
 
   </div>
@@ -69,8 +69,9 @@ animation: counterone 10s ;
   animation-fill-mode: forwards;
   counter-reset: num var(--num);
   font: 700 70px system-ui;
+  
   padding: 0rem;
-  color:gray;
+  color:#ffffff;
 }
 
 @-webkit-keyframes counterone {
@@ -96,7 +97,7 @@ animation: counterone 10s ;
     --num: 0;
   }
   to {
-    --num: 1000;
+    --num: 130000;
   }
 }
 
@@ -111,7 +112,7 @@ counter3 {
   counter-reset: num var(--num);
   font: 700 70px system-ui;
   padding: 0rem;
-  color:gray;
+  color:#ffffff;
   
 }
 
@@ -120,7 +121,8 @@ counter3 {
     --num: 0;
   }
   to {
-    --num: 3000;
+    --num: 374000;
+    
   }
 }
 
@@ -135,7 +137,7 @@ counter5 {
   counter-reset: num var(--num);
   font: 700 70px system-ui;
   padding: 0rem;
-  color:gray;
+  color:#ffffff;
 }
 
 @keyframes counterfive {
@@ -143,7 +145,8 @@ counter5 {
     --num: 0;
   }
   to {
-    --num: 4000;
+    --num: 500000;
+    
   }
 }
 
@@ -161,9 +164,11 @@ counter5::after {
   display: flex;
   -webkit-flex-wrap: nowrap;
    flex-wrap: nowrap;
-   background:darkblue;
+   background:#5b146f;
   justify-content: space-around;
   margin-block-start: 0px;
+  
+  
 }
 .containerr{
    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -171,9 +176,10 @@ counter5::after {
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   background:darkblue;
+  flex-wrap: nowrap;
+  background:#5b146f;
   justify-content: space-around;
+  padding:0px;
   height: 100%;
   width: 100%;
  
@@ -187,7 +193,7 @@ counter5::after {
   and (max-device-width: 480px) {
 
 .container{
-  background-color: darkblue;
+  background-color: #5b146f;
   padding:0em;
   
 }
@@ -209,7 +215,8 @@ counter1::after {
 .container1{
   height: 20px;
 }
- 
+
+
 
 
 }

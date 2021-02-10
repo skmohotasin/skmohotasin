@@ -48,11 +48,11 @@ export default {
 }
 .text{
   font-weight: bolder;
-  color:red;
+  color:#ff009c;
   font-size:10pt;
 }
 .testing{
- color:purple;
+ color:#5b146f;
  font-weight: bolder;
  font-size: 50pt;
 }
@@ -67,6 +67,10 @@ export default {
 }
 .work_button:hover {
   background: #c8c9cb;
+}
+
+.title{
+  padding-top:0px;
 }
 
 
