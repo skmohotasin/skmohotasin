@@ -16,6 +16,7 @@ export default {
 <style scoped>
 .BOimage {
   width: 100%;
+  padding-top:20px;
   
   
 }

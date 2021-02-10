@@ -9,8 +9,8 @@
     <p class="desc"> We take local New Zealand consumer products cross border 
       <br>in the fastest and most efficient way, creating exceptional 
       <br>sales growth utilising our proven DTC model.  </p>
-    <p class="text"> For General Queries : <em>12345678</em></p>
-    <p class="text" > Email : <em>@gmail.com</em> </p>
+    <p class="text"> For General Queries : <em>06 8766773</em></p>
+    <p class="text" > Email : <em>webstore@thebrandoutlet.co.nz</em> </p>
     </div>
 
     <div class="logos" style="text-align:left">
@@ -33,23 +33,22 @@
     <div class="highlight-center">
       <p> </p>
       <h4><strong> Quick Links</strong></h4>
-      <br><br>
-      <p>Home</p>
-      <p>About Us </p>
-      <p>Approach</p>
-      <p>Results</p>
-      <p>Our Brands</p>
-      <p>Contact Us</p>
+      
+      <p><a href="https://finalmile.co.nz/" style="color:white;font-size:16pt">Home</a></p>
+      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt"></a>About Us </p>
+      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt"></a>Approach</p>
+      <p><a href="https://finalmile.co.nz/page/our-brands" style="color:white;font-size:16pt"></a>Our Brands</p>
+      <p><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt"></a>Contact Us</p>
 
     </div>
     <div class="highlight-right">
       <h4><strong>Newsletter</strong></h4>
-      <block-gallery
+      
       <p> Sign up for getting latest updates </p>
       <p ><textarea style="border-radius:10px;width:300px" v-model="message" placeholder="Your email"></textarea>
 
       <a href="https://google.com" target="_blank" rel="noopener">
-      <img class="logo" src="../assets/img/newsletter-logo.png" alt="Newsletter">
+      <img  src="../assets/img/newsletter-logo.png" alt="Newsletter" width="35" height="35" style="padding-left:10px">
 
       
     </a>

@@ -49,12 +49,12 @@ export default {
 .text{
   font-weight: bolder;
   color:#ff009c;
-  font-size:10pt;
+  font-size:12pt;
 }
 .testing{
  color:#5b146f;
  font-weight: bolder;
- font-size: 50pt;
+ font-size: 36pt;
 }
 .work_button {
   background:white;

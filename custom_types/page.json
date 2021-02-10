@@ -7,6 +7,56 @@
         "label" : "Unique ID"
       }
     },
+    "homepage_banner" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading2",
+              "label" : "Banner Title",
+              "placeholder" : "Site Title..."
+            }
+          },
+          "tagline" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Tagline",
+              "placeholder" : "Site Tagline..."
+            }
+          },
+          "button_link" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Button Link"
+            }
+          },
+          "image" : {
+            "type" : "Image",
+            "config" : {
+              "constraint" : {
+                "width" : 200,
+                "height":200
+                
+              },
+              "thumbnails" : [ ],
+              "label" : "Banner Image"
+            }
+          },
+          "button_label" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "paragraph",
+              "label" : "Button Label"
+            }
+          }
+        },
+        "label" : "Homepage Banner",
+        "repeat" : false
+      }
+    },
     "page_content" : {
       "type" : "Slices",
       "fieldset" : "Slice zone",

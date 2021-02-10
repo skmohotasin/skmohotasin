@@ -18,9 +18,8 @@
         
         <!-- Template for page tagline -->
         
-       <h1 class="banner-description">
-          {{ $prismic.richTextAsPlain(fields.tagline) }}
-
+       <h1 class="banner-description"> 
+         <strong>{{ $prismic.richTextAsPlain(fields.tagline) }}</strong>
        </h1>
         
         <prismic-link class="banner-button" :field="fields.button_link">
@@ -162,7 +161,7 @@ export default {
   
 }
 .title{
-  
+  padding-top:100px;
   padding-bottom:30px;
   padding-left: 90px;
   font-size: 70px;

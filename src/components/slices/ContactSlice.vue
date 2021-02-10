@@ -80,7 +80,7 @@ export default {
         justify-content: center;
         padding-top:50px;
         border-style: solid;
-        border-width: 2px 10px 4px 10px;
+        border-width: 2px 2px 2px 2px;
         border-color: whitesmoke;
         
         

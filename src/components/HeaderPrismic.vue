@@ -84,6 +84,7 @@ export default {
 }
 
 .homepage-banner {
+ 
  background:linear-gradient(to top left, #ff009c,#5b146f,#00a9ff,#ffd515);
     max-width: 5000px;
     margin: auto;
@@ -92,7 +93,7 @@ export default {
     background-blend-mode: hard-light;
     
    
-    animation: hue-rotate alternate-reverse 5s infinite;
+    animation: hue-rotate alternate-reverse 10s infinite;
     
     
 }

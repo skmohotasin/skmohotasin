@@ -46,8 +46,8 @@ export default {
 }
 .text{
   font-weight: bolder;
-  color:red;
-  font-size:10pt;
+  color:#ff009c;
+  font-size:12pt;
 }
 .testing{
  color:purple;

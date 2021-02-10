@@ -39,13 +39,13 @@ export default {
 .text{
   font-weight: bolder;
   color:#ff009c;
-  font-size:10pt;
+  font-size:12pt;
   text-align: center;
 }
 .testing{
  color:#5b146f;
  font-weight: bolder;
- font-size: 50pt;
+ font-size: 36pt;
  text-align: center;
  
 }
@@ -58,13 +58,10 @@ export default {
   color: purple;
   font-size: 14px;
   font-weight: 700;
-  padding: 15px 40px;
-  margin: 0;
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  
-  transform: translate(-50%, -50%)
+  padding: 25px 40px;
+  margin-left:60px;
+ 
+ 
 }
 .button:hover {
   background: #c8c9cb;
