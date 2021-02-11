@@ -5,7 +5,7 @@
     
     </router-link>
     <nav>
-      <ul>
+      <ul style="padding-left:10px;padding-right:10px">
         <li v-for="menuLink in menuLinks" :key="menuLink.id">
           <prismic-link :field="menuLink.link">{{ $prismic.richTextAsPlain(menuLink.label) }}</prismic-link>
         </li>
@@ -52,7 +52,7 @@ export default {
 .site-header,
 .site-header a {
   
-  color: #484d52;
+  color: #ffffff;
   font-weight: 700;
   
 }
@@ -79,7 +79,7 @@ export default {
   margin: 0;
 }
 .site-header nav li {
-  display: inline-block;
+  display:initial;
   margin-left: 40px;
 }
 
@@ -122,15 +122,15 @@ export default {
   and (max-device-width: 480px) {
 
  .site-header nav li {
-   
     margin-block-end: 0px;
   }
 
 .homepage .site-header,
 .homepage .site-header a {
-  font-size: 10px;
+  font-size: 14px;
   padding: 10px;
-  padding-top: 0px;
+  padding-top: 10px;
+  width: 100%;
 }
 .homepage .site-header a {
  
@@ -142,7 +142,15 @@ export default {
    margin-left:0px;
    margin-right: 0px;
 }
+
+.homepage-banner{
+ 
+  line-height: 0;
 }
+
+
+
+  }
 
 </style>
 

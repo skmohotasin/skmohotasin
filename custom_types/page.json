@@ -115,7 +115,7 @@
                 "config" : {
                   "constraint" : {
                     "width" : 5000,
-                    "height" : 3000
+                    "height" : 3500
                   },
                   "thumbnails" : [ ],
                   "label" : "Image"
@@ -1058,6 +1058,62 @@
                     "multi": "paragraph, heading6, strong",
                     "label": "Text",
                     "placeholder": "text"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "desc_slice" : {
+              "type" : "Slice",
+              "fieldset" : "Desc Slice",
+              "description" : "Desc  Slice",
+              "icon" : "star",
+              "non-repeat" : {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph, heading6, strong",
+                    "label": "Text",
+                    "placeholder": "text"
+                  }
+                },
+                "testing": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph, heading6, strong",
+                    "label": "Text",
+                    "placeholder": "text"
+                  }
+                },
+                "title" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "heading2",
+                    "label" : "Image Title",
+                    "placeholder" : "Featured Title..."
+                  }
+                },
+                "headline" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "heading3",
+                    "label" : "Image Headline",
+                    "placeholder" : "Featured Headline..."
+                  }
+                },
+                "link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "label" : "Featured Link",
+                    "placeholder" : "Optional Link"
+                  }
+                },
+                "link_label" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "paragraph",
+                    "label" : "Featured Link Label",
+                    "placeholder" : "Optional Link Label"
                   }
                 }
               },

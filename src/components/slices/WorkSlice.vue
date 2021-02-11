@@ -2,8 +2,8 @@
   <section class='highlight content-section'>
   <div class="container">
     <div class="highlight-left">
-      <prismic-rich-text class="text" :field="slice.primary.text"/>
-      <prismic-rich-text class="testing" :field="slice.primary.testing"/>
+      <prismic-rich-text style="margin-bottom:-2em" class="text" :field="slice.primary.text"/>
+      <prismic-rich-text style="margin-bottom:-2em" class="testing" :field="slice.primary.testing"/>
       <prismic-rich-text class="title" :field="slice.primary.title"/>
       <prismic-rich-text class="headline" :field="slice.primary.headline"/>
       <p>
@@ -76,7 +76,8 @@ export default {
 
 
 /* Media Queries */
-@media (max-width: 320px) {
+@media (max-width: 320px) 
+and (max-device-width: 480px){
 
   .container {
         display:reverse;
@@ -86,10 +87,11 @@ export default {
         
   }
   .highlight-right {
-    float: none;
-    text-align:left;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
+    width: 300px;
+  align-items: left;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
     
   }
 .highlight-left{
@@ -102,17 +104,21 @@ export default {
 
   .text{
     
-    text-align: center;
+    text-align: left;
+    font-size: 14pt;
   }
   .testing{
     
-    text-align: center;
-    font-size: 15pt;
+    text-align: left;
+    font-size: 20pt;
   }
 
   .work_button{
 
     font-size: 10px;
+  }
+  .desc3{
+    line-height: 0em;
   }
 }
 

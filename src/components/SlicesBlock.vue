@@ -86,6 +86,10 @@
             <template v-else-if="slice.slice_type === 'slideshow_slice'">
                 <slideshow-slice :slice="slice"/>
             </template>
+            <!-- Description Description without link slice component -->
+            <template v-else-if="slice.slice_type === 'desc_slice'">
+                <desc-slice :slice="slice"/>
+            </template>
             
             
         </section>
@@ -115,6 +119,7 @@ const FormSlice = () => import("./slices/FormSlice.vue");
 const ImagesSlider = () => import("./slices/ImagesSlider.vue");
 const ContactSlice = () => import("./slices/ContactSlice.vue");
 const SlideshowSlice = () => import("./slices/SlideshowSlice.vue");
+const DescSlice = () => import("./slices/DescSlice.vue");
 
 export default {
   props: ['slices'],
@@ -140,7 +145,8 @@ export default {
     FormSlice,
     ImagesSlider,
     ContactSlice,
-    SlideshowSlice
+    SlideshowSlice,
+    DescSlice
     
   },
 }

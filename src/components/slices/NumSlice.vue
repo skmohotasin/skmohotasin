@@ -22,8 +22,8 @@
 
   <div class="containerr">
   
-<counter2 style="line-height:0em">
-      <prismic-rich-text  style="font-size:20px;color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
+    <counter2 style="line-height:0em">
+      <prismic-rich-text  style="color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
     </counter2>
 
     <counter6 style="line-height:0em">
@@ -180,9 +180,7 @@ counter5::after {
   background:#5b146f;
   justify-content: space-around;
   padding:0px;
-  height: 100%;
-  width: 100%;
- 
+  
   
   
 }
@@ -192,30 +190,41 @@ counter5::after {
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
 
-.container{
-  background-color: #5b146f;
-  padding:0em;
-  
-}
 
 counter5::after {
-  font-size: 35px;  
+  
+  font-size: 15px;  
 }
 counter3::after {
-  font-size: 35px;
+  font-size: 15px;
   padding: 0rem;
 }
 counter1::after {
-  font-size: 35px;
+  font-size: 15px;
   padding: 0rem;
 }
 .containerr{
-  font-size: 10px;
+  font-size: 6px;
 }
 .container1{
-  height: 20px;
+  height: 10px;
+}
+.text1{
+  font-size:6pt;
 }
 
+.container{
+  
+  background-color: #5b146f;
+  padding-left:0px;
+  padding-right:0px;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.containerr{
+  visibility: hidden;
+}
 
 
 

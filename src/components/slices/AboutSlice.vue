@@ -84,7 +84,8 @@ export default {
         display:inline-flex;
         text-align: center;
         flex-wrap: wrap;
-        margin-block-start:0px;      
+        margin-block-start:0px;   
+        padding: 0px;   
   }
   .highlight-right {
     text-align:left;
@@ -92,21 +93,26 @@ export default {
     margin-inline-end: 0px;
   }
 .highlight-left{
-  width: 200px;
+  width: 300px;
   align-items: left;
   padding-bottom: 0px;
-  padding-left: 70px;
-  padding-right: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
   .text{
-    text-align: center;
+    
+    text-align: left;
+    font-size: 14pt;
   }
   .testing{
-    text-align: center;
-    font-size: 15pt;
+    text-align: left;
+    font-size: 25pt;
   }
   .work_button{
     font-size: 10px;
+  }
+  .h3{
+    color:Red;
   }
 }
 @media only screen 
@@ -118,7 +124,9 @@ export default {
         padding-top: 0px;
         display:inline-flex;
         text-align: center;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;
+        margin-block-start:0px;   
+        padding: 0px;   
   }
   .highlight-right {
     text-align:left;
@@ -126,21 +134,26 @@ export default {
     margin-inline-end: 0px;
   }
 .highlight-left{
-  width: 100%;
+  width: 300px;
   align-items: left;
   padding-bottom: 0px;
-  padding-left: 70px;
-  padding-right: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
   .text{
-    text-align: center;
+    
+    text-align: left;
+    font-size: 14pt;
   }
   .testing{
-    text-align: center;
-    font-size: 15pt;
+    text-align: left;
+    font-size: 25pt;
   }
   .work_button{
     font-size: 10px;
+  }
+  .h3{
+    color:Red;
   }
 }
 @media only screen 

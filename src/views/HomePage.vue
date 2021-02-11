@@ -184,9 +184,45 @@ export default {
       text-align: left;
       padding-left: 10px;
     } **/
-   .homepage-banner{
-      
-      width:100%
-    }
+  .homepage-banner {
+  color: #ffffff;
+  line-height: 0;
+  text-align: left;
+  
+}
+.banner-content {
+  text-align: left;
+}
+.banner-description {
+  padding-top:0px;
+  padding-bottom: 15px;
+  text-align: left;
+  padding-left:10px;
+  font-size:16px;
+  display: inline-flex;
+}
+
+.banner-button {
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 40px;
+  margin: 100px;
+  
+  
+}
+.banner-button:hover {
+  background: #c8c9cb;
+  
+}
+.title{
+  padding-top:150px;
+  padding-bottom:30px;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+
 }
 </style>

@@ -17,13 +17,16 @@ export default {
 <style scoped>
 
 
-@media (max-width: 320px) {
+@media (max-width: 320px) 
+and (max-device-width: 480px)
+  {
+
 .image{
-    padding-block-start: 0px;
-    padding-top:0px;
-    width:200px;
-    align-content: center;
-    padding-left: 65px;
+  width: 320px;
+  align-items: left;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 }
 

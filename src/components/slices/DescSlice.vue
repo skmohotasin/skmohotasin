@@ -17,7 +17,7 @@
 <script>
 export default {
   props: ['slice'],
-  name: 'description-slice'
+  name: 'desc-slice'
 }
 </script>
 
@@ -59,7 +59,7 @@ export default {
   font-size: 14px;
   font-weight: 700;
   padding: 25px 40px;
-  margin-left:60px;
+  margin-left:400px;
  
  
 }
@@ -67,14 +67,12 @@ export default {
   background: #c8c9cb;
 }
 /* Media Queries */
-@media (max-width: 320px)
-and (max-device-width: 480px) {
+@media (max-width: 320px) {
  
 .text{
  
   text-align: center;
   padding-bottom: 0px;
-  font-size:14pt;
   
 }
 
@@ -84,13 +82,10 @@ and (max-device-width: 480px) {
   text-align: center;
   
 }
-
 .button{
-  margin-left:0px;
-  font-size:15px;
   
+  align-content: right;
 }
-
 }
 
 @media only screen 

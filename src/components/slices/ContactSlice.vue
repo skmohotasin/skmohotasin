@@ -14,15 +14,10 @@
     <label for="company">Company</label>
     </div>
     <p>
-    <input type="text" id="company" name="company" placeholder="">
+    <input type="text" id="company" name="company" placeholder="Your company's name">
     </p>
 
-    <div class="description">
-    <label for="description">Description</label>
-    </div>
-    <p>
-    <input type="text" id="description" name="description" placeholder="">
-    </p>
+    
 
     
     </div>
@@ -39,18 +34,10 @@
       <label for="Message">Message</label>
       </div>
       <p>
-      <select id="message" name="message">
-      <option value="Graduate">Graduate</option>
-      <option value="Company">Company</option>
-      <option value="Investor">Investor</option>
-      <option value="Apprentice">Apprentice</option>
-      <option value="Journalist">Journalist</option>
-      </select>
-      </p>
-      <br>
-      <br>
-      <br>
-      <br>
+    <input type="text" id="description" name="description" placeholder="Message">
+    </p>
+      
+      
       
 
     </div>
@@ -149,35 +136,28 @@ input:focus {
 
 .email{
   border-radius: 15px;
-  background: rgb(170, 222, 243);
+  background: #00a9ff;
   padding: 10px 15px 10px 15px;
   width: 50px;
   margin-left:120px;
 }
 .company{
   border-radius: 15px;
-  background: skyblue;
+  background: #00a9ff;
   padding: 10px 15px 10px 15px;
   width: 100px;
   margin-left:100px;
 }
-.description{
-  border-radius: 15px;
-  background:rgb(192, 139, 192) ;
-  padding: 10px 15px 10px 15px;
-  width: 110px;
-  margin-left:100px;
-}
 .name{
   border-radius: 15px;
-  background:rgb(243, 208, 214);
+  background:#00a9ff;
   padding: 10px 15px 10px 15px;
-  width: 50px;
+  width: 60px;
   margin-left:100px;
 }
 .message{
   border-radius: 15px;
-  background: rgb(243, 243, 91);
+  background: #00a9ff;
   padding: 10px 15px 10px 15px;
   width: 90px;
   margin-left:100px;

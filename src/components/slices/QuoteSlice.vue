@@ -18,7 +18,7 @@ export default {
   font-family: Haas Grot Disp;  
   font-size: 30px;
   font-style: italic;
-  font-weight:bold; 
+  
   color: #5b146f; 
   letter-spacing : 1.14;
   line-height: 1.5em;

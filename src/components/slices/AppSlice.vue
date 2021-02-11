@@ -55,7 +55,7 @@ export default {
 }
 .description1{
   background-color: #ff009c;
-  border-radius: 25px;
+  border-radius: 10px;
   padding-left:10px;
   padding-right:10px;
   
@@ -63,14 +63,14 @@ export default {
 }
 .description2{
   background-color: #00a9ff;
-  border-radius: 25px;
+  border-radius: 10px;
   padding-left:10px;
   padding-right:10px;
   
 }
 .description3{
   background-color: #5b146f;
-  border-radius: 25px;
+  border-radius: 10px;
   padding-left:10px;
   padding-right:10px;
   line-height: 2em;
@@ -110,9 +110,11 @@ export default {
 }
 
 /* Media Queries */
-@media (max-width: 320px) {
+@media (max-width: 320px) 
+  and (max-device-width: 480px) {
   .gallery-item {
-    padding: 30px;
+    padding: 10px;
+    
     display: fit-content;
     flex-direction: column;
   

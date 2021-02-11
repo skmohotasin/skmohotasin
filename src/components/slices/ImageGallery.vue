@@ -53,6 +53,8 @@ export default {
     -webkit-flex:  auto;
     -ms-flex:  auto;
     flex: auto;
+    
+    
   }
 }
 </style>
