@@ -71,83 +71,30 @@ export default {
 
 .title{
   padding-top:0px;
+  padding-bottom:70px;
 }
 
-
-
-/* Media Queries */
-@media (max-width: 320px) 
-and (max-device-width: 480px){
-
-  .container {
-        display:reverse;
-        text-align: left;
-        flex-wrap: wrap;
-        
-        
-  }
-  .highlight-right {
-    width: 300px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-    
-  }
-.highlight-left{
-  width: 200px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 70px;
-  padding-right: 50px;
-}
-
-  .text{
-    
-    text-align: left;
-    font-size: 14pt;
-  }
-  .testing{
-    
-    text-align: left;
-    font-size: 20pt;
-  }
-
-  .work_button{
-
-    font-size: 10px;
-  }
-  .desc3{
-    line-height: 0em;
-  }
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-   
- {
+/*Media Queries*/
+@media (min-width: 320px) {
+  
 
    .container {
-        display:reverse;
+        display:block;
         text-align: left;
-        flex-wrap: wrap;
-        
-        
+
   }
-  .highlight-right {
-    float: none;
-    text-align:left;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-    
-  }
+
 .highlight-left{
-  width: 200px;
+  width:100%;
   align-items: left;
   padding-bottom: 0px;
-  padding-left: 70px;
-  padding-right: 50px;
+  padding-left:10px
+  
+}
+
+.highlight-right{
+ 
+  width:90%;
 }
 
   .text{
@@ -168,17 +115,16 @@ and (max-device-width: 480px){
     font-size: 50px;
   }
 
- }
+}
 
- @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px){
+@media (min-width: 768px) {
 
-     .testing{
-    
-    text-align: left;
-    font-size: 50px;
+  .container {
+        display:flex;
   }
 
-  }
+}
+  
+
+
 </style>

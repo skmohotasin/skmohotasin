@@ -22,14 +22,4 @@ export default {
 }
 
 
-/* Media Queries */
-@media (max-width: 320px) {
-  .BOimage {
-    padding-block-start: 50px;
-    
-    align-content: center;
-    width: 100%;
-
-  }
-}
 </style>

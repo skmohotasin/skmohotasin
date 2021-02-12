@@ -66,51 +66,18 @@ export default {
 .button:hover {
   background: #c8c9cb;
 }
-/* Media Queries */
-@media (max-width: 320px) {
- 
-.text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  
+@media (min-width: 320px) {
+  .container{
+    display:block;
+    padding:30px;
+
+  }
+
+  .button{
+    margin:80px;
+  }
 }
 
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-.button{
-  
-  align-content: right;
-}
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-   
- {
-   .text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  
-}
-
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-.button{
-  
-  align-content: right;
-}
- }
 
  
 

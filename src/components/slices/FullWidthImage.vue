@@ -16,18 +16,11 @@ export default {
 
 <style scoped>
 
-
-@media (max-width: 320px) 
-and (max-device-width: 480px)
-  {
-
-.image{
-  width: 320px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
+/*Media Queries*/
+@media (min-width: 320px) {
+  .image {
+  width:100%;
+  }
 }
 
 </style>

@@ -66,56 +66,6 @@ export default {
 .button:hover {
   background: #c8c9cb;
 }
-/* Media Queries */
-@media (max-width: 320px)
-and (max-device-width: 480px) {
- 
-.text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  font-size:14pt;
-  
-}
-
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-
-.button{
-  margin-left:0px;
-  font-size:15px;
-  
-}
-
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-   
- {
-   .text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  
-}
-
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-.button{
-  
-  align-content: right;
-}
- }
 
  
 

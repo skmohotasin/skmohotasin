@@ -44,14 +44,5 @@ export default {
   margin-top: -20px;
   text-transform: uppercase;
 }
-/* Media Queries */
-@media (max-width: 320px) {
-  .gallery-item {
-    -webkit-box-flex: 100%;
-    -moz-box-flex:  100%;
-    -webkit-flex:  100%;
-    -ms-flex:  100%;
-    flex: 100%;
-  }
-}
+
 </style>

@@ -3,18 +3,18 @@
   <div class="container">
   <div class="container1">
     <counter1>
-      <prismic-rich-text class="text" :field="slice.primary.text"/>
+      
     </counter1>
-     <prismic-rich-text class="comment1" :field="slice.primary.text"/>
+     
    </div>
    <div class="container3">
     <counter5>
-      <prismic-rich-text class="text4" :field="slice.primary.text4"/>
+      
     </counter5>
    </div>
     <div class="container2">
     <counter3>
-      <prismic-rich-text class="text10" :field="slice.primary.text10"/>
+      
     </counter3>
    </div>
   </div>
@@ -184,24 +184,20 @@ counter5::after {
   
   
 }
-/* Media Queries */
 
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+@media (min-width: 320px) {
 
-
-counter5::after {
+  counter5::after {
   
-  font-size: 15px;  
+  font-size: 25px;  
 }
 counter3::after {
-  font-size: 15px;
-  padding: 0rem;
+  font-size: 25px;
+  padding: 2rem;
 }
 counter1::after {
-  font-size: 15px;
-  padding: 0rem;
+  font-size: 25px;
+  padding: 2rem;
 }
 .containerr{
   font-size: 6px;
@@ -214,21 +210,71 @@ counter1::after {
 }
 
 .container{
-  
-  background-color: #5b146f;
-  padding-left:0px;
-  padding-right:0px;
-  justify-content: space-around;
-  width: 200px;
+  display: flex;
+  margin-left:15px;
+  padding-left:20px;
+  padding-right:20px;
+  width: 85%;
 }
-
 .containerr{
-  visibility: hidden;
+  display: flex;
+  margin-left:15px;
+  padding-left:20px;
+  padding-right:20px;
+  width: 85%;
 }
 
 
 
+
+
 }
+
+@media (min-width: 768px) {
+
+  counter5::after {
+  
+  font-size: 30px;  
+}
+counter3::after {
+  font-size: 30px;
+  padding: 2rem;
+}
+counter1::after {
+  font-size: 30px;
+  padding: 2rem;
+}
+.containerr{
+  font-size: 8px;
+}
+.container1{
+  height: 10px;
+}
+.text1{
+  font-size:6pt;
+}
+
+.container{
+  display: flex;
+  margin-left:15px;
+  padding-left:20px;
+  padding-right:20px;
+  width: 90%;
+}
+.containerr{
+  display: flex;
+  margin-left:15px;
+  padding-left:20px;
+  padding-right:20px;
+  width: 90%;
+}
+
+
+
+
+
+}
+
 
 </style>
 

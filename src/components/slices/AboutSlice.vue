@@ -72,138 +72,47 @@ export default {
 }
 
 
-/* Media Queries */
-/*iphones*/
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  {
 
-  .container {
-        padding-top: 0px;
-        display:inline-flex;
-        text-align: center;
-        flex-wrap: wrap;
-        margin-block-start:0px;   
-        padding: 0px;   
-  }
-  .highlight-right {
-    text-align:left;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-  }
-.highlight-left{
-  width: 300px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-  .text{
+/*Media Queries*/
+@media (min-width: 320px) {
+  .container{
+    display:block;
+    width:100%;
     
-    text-align: left;
-    font-size: 14pt;
   }
-  .testing{
-    text-align: left;
-    font-size: 25pt;
-  }
-  .work_button{
-    font-size: 10px;
-  }
-  .h3{
-    color:Red;
-  }
+
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-   
- {
-  .container {
-        padding-top: 0px;
-        display:inline-flex;
-        text-align: center;
-        flex-wrap: wrap;
-        margin-block-start:0px;   
-        padding: 0px;   
-  }
-  .highlight-right {
-    text-align:left;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-  }
-.highlight-left{
-  width: 300px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-  .text{
+/*Small devices (landscape phones, less than 768px)*/
+@media (min-width: 768px) {
+.container{
+    display:block;
+    width:90%;
     
-    text-align: left;
-    font-size: 14pt;
   }
-  .testing{
-    text-align: left;
-    font-size: 25pt;
-  }
-  .work_button{
-    font-size: 10px;
-  }
-  .h3{
-    color:Red;
-  }
-}
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px){
-.highlight {
-  position: relative;
-  overflow: auto;
 }
 
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:0px;
-      }
-
-.highlight-right {
-  flex-basis: 70%;
-  order: 2;
-  padding-left: 40px;
-  
-}
-.highlight-left {
-  width: 100%;
-  
-}
-.text{
-  font-weight: bolder;
-  color:red;
-  font-size:16pt;
-}
-.testing{
- color:purple;
- font-weight: bolder;
- font-size: 36pt;
-}
-
-.aboutbutton {
-  background:white;
-  border-radius: 50px;
-  border:2px solid purple;
-  color: purple;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 15px 40px;
-}
-.aboutbutton:hover {
-  background: #c8c9cb;
-}
+/*Medium devices (tablets, less than 992px)*/
+@media (min-width: 992px) {
+.container{
+    display:flex;
+    width:90%;
+    justify-content: center;
   }
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (min-width: 1200px) {
+.container{
+    display:flex;
+    width:100%;
+    padding-left:0px;
+    
+  }
+}
+
+
+
+
+
 
 </style>

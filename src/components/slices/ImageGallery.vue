@@ -44,17 +44,33 @@ export default {
   margin-top: -20px;
   text-transform: uppercase;
 }
-/* Media Queries */
-@media (max-width: 320px) {
+
+/*Media Queries*/
+@media (min-width: 320px) {
   .gallery-item {
     
     -webkit-box-flex:auto;
     -moz-box-flex:  auto;
     -webkit-flex:  auto;
     -ms-flex:  auto;
-    flex: auto;
+    flex: auto; 
     
+  }
+  
+
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    
+  -webkit-box-flex: 0 1 30%;
+  -moz-box-flex:  0 1 30%;
+  -webkit-flex:  0 1 30%;
+  -ms-flex:  0 1 30%;
+  flex: 0 1 30%;
+   
     
   }
 }
+
 </style>

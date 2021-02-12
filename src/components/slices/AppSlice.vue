@@ -108,32 +108,31 @@ export default {
   font-weight: lighter;
   
 }
-
 /* Media Queries */
-@media (max-width: 320px) 
-  and (max-device-width: 480px) {
+@media (min-width: 320px) {
+  
   .gallery-item {
-    padding: 10px;
+    display:block;
     
-    display: fit-content;
-    flex-direction: column;
   
   }
   .description1{
     
-    max-width:200px;
-    max-height: 100px;
+    max-width:85%;
+    max-height: 150px;
+    
   }
     .description2{
-    max-width:200px;
-      max-height: 150px;
-  }
-    .description3{
-    max-width:200px;
+    max-width:85%;
     max-height: 200px;
   }
+    .description3{
+    max-width:85%;
+    max-height: 225px;
+  }
   .title1{
-    font-size: 18px;
+    font-size: 20px;
+    padding:0px;
   }
   .title2{
     font-size: 20px;
@@ -143,67 +142,44 @@ export default {
     
   }
   .desc1{
-    
-  font-size: 10px;
+  padding-top:0px;
+  font-size: 20px;
+  
 }
  .desc2{
     
-  font-size: 10px;
+  font-size: 20px;
 }
  .desc3{
     
-  font-size: 10px;
+  font-size: 20px;
   line-height: 2;
  
 }
-
-
-
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
- {
-   .gallery-item {
-    padding: 60px;
-    display: block;
-    flex-direction: column;
-  
+
+@media (min-width: 768px) {
+
+    .gallery-item {
+    display:flex;
+
   }
   .description1{
     
-    max-width:200px;
-    max-height: 100px;
+    max-width:85%;
+    max-height: 230px;
+    
   }
     .description2{
-      max-width:200px;
-      max-height: 150px;
+    max-width:85%;
+    max-height: 330px;
   }
     .description3{
-    max-width:200px;
-    max-height: 200px;
-    line-height: 80%;
+    max-width:85%;
+    max-height: 400px;
   }
-  .title1{
-    font-size: 18px;
-  }
-  .title2{
-    font-size: 20px;
-  }
-  .title3{
-    font-size: 20px;
-  }
-  .desc1{
-    
-  font-size: 10px;
 }
- .desc2{
-    
-  font-size: 10px;
-}
- .desc3{
-    
-  font-size: 10px;
-}
- }
+
+
+
 </style>

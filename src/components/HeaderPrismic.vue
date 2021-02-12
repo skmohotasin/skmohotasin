@@ -117,40 +117,7 @@ export default {
   }
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
 
- .site-header nav li {
-    margin-block-end: 0px;
-  }
-
-.homepage .site-header,
-.homepage .site-header a {
-  font-size: 14px;
-  padding: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-.homepage .site-header a {
- 
-  padding-inline-end: 0px;
-  
-}
-.site-header nav li {
-   display: inline;
-   margin-left:0px;
-   margin-right: 0px;
-}
-
-.homepage-banner{
- 
-  line-height: 0;
-}
-
-
-
-  }
 
 </style>
 

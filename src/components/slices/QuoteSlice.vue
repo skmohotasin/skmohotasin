@@ -41,10 +41,5 @@ export default {
 .quote blockquote:after {
   content: close-quote;
 }
-/* Media Queries */
-@media (max-width: 320px) {
-  .quote {
-    font-size: 20px;
-  }
-}
+
 </style>

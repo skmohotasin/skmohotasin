@@ -66,12 +66,5 @@ export default {
 }
 
 
-/* Media Queries */
-@media (max-width: 320px) {
-  .highlight-left,
-  .highlight-right {
-    width: 100%;
-    float: none;
-  }
-}
+
 </style>
