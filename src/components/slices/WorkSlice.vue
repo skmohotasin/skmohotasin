@@ -104,7 +104,7 @@ export default {
   .testing{
     
     text-align: center;
-    font-size: 20pt;
+    font-size: 30pt;
   }
 
   .work_button{
