@@ -52,15 +52,18 @@ export default {
 
 
 .button {
+  
   background:white;
   border-radius: 50px;
   border:2px solid purple;
   color: purple;
   font-size: 14px;
   font-weight: 700;
-  padding: 25px 40px;
-  margin-left:60px;
- 
+  padding: 15px 40px;
+  display: grid;
+  text-align: center;
+  margin-left:50px;
+  margin-right:50px;
  
 }
 .button:hover {

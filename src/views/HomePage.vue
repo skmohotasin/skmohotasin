@@ -167,5 +167,19 @@ export default {
   font-size: 70px;
 }
 
+@media (min-width: 320px) {
+ .banner-description{
+   font-size: 10pt;
+ }
+
+}
+
+@media (min-width: 768px) {
+ .banner-description{
+   font-size: 40pt;
+ }
+
+}
+
 
 </style>
