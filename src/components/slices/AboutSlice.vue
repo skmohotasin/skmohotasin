@@ -55,7 +55,7 @@ export default {
 .testing{
  color:#5b146f;
  font-weight: bolder;
- font-size: 30pt;
+ font-size: 36pt;
 }
 
 .aboutbutton {

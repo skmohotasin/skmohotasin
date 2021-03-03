@@ -118,16 +118,16 @@ export default {
   }
   .description1{
     
-    max-width:75%;
+    max-width:85%;
     max-height: 150px;
     
   }
     .description2{
-    max-width:75%;
+    max-width:85%;
     max-height: 200px;
   }
     .description3{
-    max-width:75%;
+    max-width:85%;
     max-height: 225px;
   }
   .title1{

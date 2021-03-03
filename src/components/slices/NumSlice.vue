@@ -23,7 +23,7 @@
   <div class="containerr">
   
     <counter2 style="line-height:0em">
-      <prismic-rich-text  style="font-sixe:20px;color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
+      <prismic-rich-text  style="color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
     </counter2>
 
     <counter6 style="line-height:0em">
@@ -234,27 +234,25 @@ counter1::after {
 
   counter5::after {
   
-  font-size: 70px;  
+  font-size: 30px;  
 }
 counter3::after {
-  font-size: 70px;
+  font-size: 30px;
   padding: 2rem;
 }
 counter1::after {
-  font-size: 70px;
+  font-size: 30px;
   padding: 2rem;
 }
 .containerr{
-  font-size: 16px;
-}
-.text1{
-   font-family:'Poppins', sans-serif;
-  font-size:16px;
+  font-size: 8px;
 }
 .container1{
   height: 10px;
 }
-
+.text1{
+  font-size:6pt;
+}
 
 .container{
   display: flex;
