@@ -120,18 +120,23 @@ export default {
        
       }
 
+.highlight-right {
+  padding-right:50px;
+  padding-left:50px;
+  order: 4;  
+  text-align: left;
+}
 
 .highlight-center {
-    padding-right:100px;
-    width:700px;
-    padding-left:500px;
+    padding-right:200px;
+    padding-left:80px;
     text-align:left;
     
 }
 
 .highlight-left {
-  padding-right:10px;
-  padding-left:100px;
+  padding-right:70px;
+  padding-left:0px;
 }
 
 .text{
@@ -163,35 +168,76 @@ p{
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
+
+
+.footer {
+  max-width: 5000px;
+  text-align: center;
+  border-top: 1px solid #DADADA;
+  color:#ffffff;
+}
+
+.container {
+display:flex;
+background:#5b146f;
+max-width: 5000px;
+padding-top:50px;
+}
+
+.highlight-center {
+    padding-right:200px;
+    padding-left:80px;
+    text-align:left;
+}
+
+.text{
+  color:rgb(219, 59, 86);
+  font-size: 10pt;
+  text-align: center;
+}
+
+.text em{
+  color:white;
+  font-size: 10pt;
+}
+
 .desc{
   color:white;
   font-weight: normal;
   font-size:16pt;
-  padding-left: 15px;
+  padding-left: 15pt;
   
   text-align: left;
 }
-.container{
-  display: grid;
+
+p{
+  margin-bottom: 1em;
 }
-.description{
-  text-align: left;
-  padding-left: 35pt;
-}
-.highlight-left{
-  padding-bottom: 15px;
-  padding-right:0px;
-  padding-left:0px;
-}
-.highlight-center{
-  text-align: left;
-  padding-left:35pt;
-  padding-bottom: 15px;
-  padding-right:0px;
-  width:300px;
+
+    .container{
+      display: block;
+    }
+    .description{
+      text-align: center;
+    }
+    .highlight-left{
+      padding-bottom: 15px;
+    }
+    .highlight-center{
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .logoo{
+    width: 20px;
+    height: 35px;
+    }
+    .copyright{
+      padding-top: 0px;
+    }
   
-}
-}
+    
+  }
 
 
 

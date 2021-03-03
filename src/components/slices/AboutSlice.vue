@@ -59,17 +59,13 @@ export default {
 }
 
 .aboutbutton {
-background:white;
+  background:white;
   border-radius: 50px;
   border:2px solid purple;
   color: purple;
   font-size: 14px;
   font-weight: 700;
   padding: 15px 40px;
-  display: grid;
-  text-align: center;
-  margin-left:50px;
-  margin-right:50px;
 }
 .aboutbutton:hover {
   background: #c8c9cb;
@@ -82,13 +78,8 @@ background:white;
   .container{
     display:block;
     width:100%;
-   
     
   }
- 
-    
-  
-  
 
 }
 /*Small devices (landscape phones, less than 768px)*/

@@ -58,11 +58,9 @@ export default {
   color: purple;
   font-size: 14px;
   font-weight: 700;
-  padding: 15px 40px;
-  display: grid;
-  text-align: center;
-  margin-left:300px;
-  margin-right:300px;
+  padding: 25px 40px;
+  margin-left:400px;
+ 
  
 }
 .button:hover {
@@ -75,7 +73,9 @@ export default {
 
   }
 
-  
+  .button{
+    margin:80px;
+  }
 }
 
 

@@ -64,10 +64,6 @@ export default {
   font-size: 14px;
   font-weight: 700;
   padding: 15px 40px;
-  display: grid;
-  text-align: center;
-  margin-left:80px;
-  margin-right:80px;
 }
 .work_button:hover {
   background: #c8c9cb;
