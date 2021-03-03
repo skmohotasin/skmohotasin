@@ -167,6 +167,7 @@ counter5::after {
    background:#5b146f;
   justify-content: space-around;
   margin-block-start: 0px;
+  padding:30px;
   
   
 }
@@ -179,7 +180,7 @@ counter5::after {
   flex-wrap: nowrap;
   background:#5b146f;
   justify-content: space-around;
-  padding:0px;
+  padding:30px;
   
   
   
@@ -252,7 +253,7 @@ counter1::after {
   font-size:16px;
 }
 .container1{
-  height: 10px;
+  height: 20px;
 }
 
 

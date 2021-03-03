@@ -1,9 +1,14 @@
 <template>
   <header class="site-header">
+    
+       
+       
     <router-link to="/" class="logo">
     
     
     </router-link>
+   
+     
     <nav>
       <ul style="padding-left:10px;padding-right:10px">
         <li v-for="menuLink in menuLinks" :key="menuLink.id">
@@ -11,8 +16,11 @@
         </li>
       </ul>
     </nav>
+   
   </header>
+  
 </template>
+
 
 <script>
 export default {
@@ -45,7 +53,7 @@ export default {
 <style>
 /* Site header */
 .site-header {
-  height: 30px;
+  height: 0px;
   padding: 0px 0;
   
 }
@@ -64,6 +72,7 @@ export default {
   color:white;
 
 }
+
 .homepage .site-header nav a:hover {
   color: #1052d6;
 }
@@ -98,6 +107,7 @@ export default {
     
 }
 
+
 @keyframes hue-rotate {
   from {
     -webkit-filter: hue-rotate(0);
@@ -116,6 +126,8 @@ export default {
     opacity: 0.9;
   }
 }
+
+
 
 
 

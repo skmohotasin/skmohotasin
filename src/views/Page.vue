@@ -4,7 +4,7 @@
     
     <!-- Button to edit document in dashboard -->
     <prismic-edit-button :documentId="documentId"/>
-    <section class="homepage-banner" style="height: 10vh; width:100%">
+    <section class="homepage-banner" style="height: 1px; width:100%">
     <!-- Template for page title. -->
     <header-prismic/>
      <!-- <div class="custom-shape-divider-bottom-1611087996" style="position:relative"> -->
