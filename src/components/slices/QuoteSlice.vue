@@ -1,7 +1,6 @@
 <template>
   <section class='content-section quote'>
     <blockquote class="block-quotation">{{ $prismic.richTextAsPlain(slice.primary.quote_text) }}</blockquote>
-    <p style="text-align:center;font-family:'Poppins', sans-serif;color:#5b146f;padding-top:20px">Sarah Kennedy - CEO Calocurb</p>
   </section>
 </template>
 
@@ -16,11 +15,11 @@ export default {
 .quote blockquote {
   display: block;
   /*font-family: 'Lora', Serif;*/
-  font-family:'Poppins', sans-serif; 
-  font-size: 25px;
+  font-family: Haas Grot Disp;  
+  font-size: 30px;
+  font-style: italic;
   
-  
-  color: #ff009c; 
+  color: #5b146f; 
   letter-spacing : 1.14;
   line-height: 1.5em;
   quotes: "\201C""\201D""\2018""\2019";
@@ -28,12 +27,12 @@ export default {
 }
 .quote blockquote:before,
 .quote blockquote:after {
-  color: #ff009c;
+  color: #5b146f;
   content: open-quote;
   /*font-family: 'Lora', Serif;*/
- font-family:'Poppins', sans-serif;
-  font-size: 2em;
-  font-weight: 500;
+  font-family: Haas Grot Disp; 
+  font-size: 2.5em;
+  font-weight: 900;
   line-height: 0.1em;
   margin-left: 10px;
   margin-right: 10px;

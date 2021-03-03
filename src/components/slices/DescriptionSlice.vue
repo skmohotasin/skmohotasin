@@ -44,7 +44,7 @@ export default {
 }
 .testing{
  color:#5b146f;
- font-weight:800;
+ font-weight: bolder;
  font-size: 36pt;
  text-align: center;
  
@@ -54,22 +54,21 @@ export default {
 .button {
   
   background:white;
-  border-radius: 70px;
-  border:2px solid #ff009c;
-  color: #ff009c;
+  border-radius: 50px;
+  border:2px solid purple;
+  color: purple;
   font-size: 14px;
   font-weight: 700;
-  padding: 20px 40px;
-  position:relative;
-  top: 50%;
-  left: 40%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding: 15px 40px;
+  display: grid;
+  text-align: center;
+  margin-left:50px;
+  margin-right:50px;
+ 
 }
 .button:hover {
   background: #c8c9cb;
 }
-
 
  
 

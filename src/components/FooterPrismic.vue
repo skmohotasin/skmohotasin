@@ -6,7 +6,11 @@
     <div class="highlight-left">
     <div class="description">
     <h1><strong> final</strong>mile </h1>
-    <p class="desc"> We come from the bottom of the world where inventiveness and grit come together naturally to create potential. <br>Our job is to catapult kiwi ventures to unlock their business possibilities. As owners we love what we do and it’s time to share that know-how with you.  </p>
+    <p class="desc"> We take local New Zealand consumer products cross border 
+      in the fastest and most efficient way, creating exceptional 
+      sales growth utilising our proven DTC model.  </p>
+    <p class="text"> For General Queries : <em>06 8766773</em></p>
+    <p class="text" > Email : <em>webstore@thebrandoutlet.co.nz</em> </p>
     </div>
 
     <!--
@@ -33,14 +37,14 @@
     
 
     <div class="highlight-center">
-           
-      <p style="margin:0em"><a href="https://finalmile.co.nz/" style="color:white;font-size:16pt">Home</a></p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">About Us</a> </p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Approach</a></p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Results</a></p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/our-brands" style="color:white;font-size:16pt">Our Brands</a></p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Careers</a></p>
-      <p style="margin:0em"><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Partner with us</a></p>
+      <p> </p>
+      <h4><strong> Quick Links</strong></h4>
+      
+      <p><a href="https://finalmile.co.nz/" style="color:white;font-size:16pt">Home</a></p>
+      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">About Us</a> </p>
+      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Approach</a></p>
+      <p><a href="https://finalmile.co.nz/page/our-brands" style="color:white;font-size:16pt">Our Brands</a></p>
+      <p><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Contact Us</a></p>
 
     </div>
 
@@ -60,14 +64,7 @@
     
     </div>
     -->
-
-    <div class="highlight-right">
-      
-    <p class="text"> Phone : <em>06 8766773</em></p>
-    <p class="text" > Email : <em>webstore@thebrandoutlet.co.nz</em> </p>
     
-    </div>
-
     
 </div>
 
@@ -114,6 +111,7 @@ export default {
 .container {
    
         display:flex;
+        
         justify-content: center;
         background:#5b146f;
         max-width: 5000px;
@@ -124,21 +122,16 @@ export default {
 
 
 .highlight-center {
-    padding-right:0px;
-    padding-left:0px;
+    padding-right:100px;
+    width:700px;
+    padding-left:500px;
     text-align:left;
-     width:700px;
+    
 }
 
 .highlight-left {
-  padding-right:300px;
-  padding-left:50px;
-}
-.highlight-right{
-  width:700px;
-  padding-right: 0px;
-  padding-left: 0px;
-  text-align:left;
+  padding-right:10px;
+  padding-left:100px;
 }
 
 .text{

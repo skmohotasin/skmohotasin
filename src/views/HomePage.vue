@@ -4,7 +4,7 @@
     
     <!-- Button to edit document in dashboard -->
     <prismic-edit-button :documentId="documentId"/>
-    <section class="homepage-banner" style="height: 15vh; width:100%">
+    <section class="homepage-banner" style="height: 35vh; width:100%">
     <!-- Template for page title. -->
     <header-prismic/>
      <!-- <div class="custom-shape-divider-bottom-1611087996" style="position:relative"> -->
@@ -125,15 +125,16 @@ export default {
   text-align: left;
 }
 .banner-title{
-  padding-top:90px;
-  padding-bottom: 0px;
+  padding-top:100px;
+  padding-bottom: 50px;
   text-align: center;
   
 }
 .banner-description {
   padding-top:0px;
-  padding-bottom: 0px;
-  text-align: CENTER;
+  padding-bottom: 50px;
+  text-align: left;
+  padding-left:80px;
 }
 .banner-title {
   color: #ffffff;
@@ -142,7 +143,7 @@ export default {
   line-height: 80px;
   text-align: left;
   padding-left: 90px;
-  
+  ;
 }
 .banner-button {
   background: purple;
@@ -151,11 +152,8 @@ export default {
   font-size: 18px;
   font-weight: 700;
   padding: 15px 40px;
-  position: relative;
-  top: 50%;
-  left: 45%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: 90px;
+  
   
 }
 .banner-button:hover {
@@ -163,11 +161,11 @@ export default {
   
 }
 .title{
-  padding-bottom:50px;
-  padding-left: 20px;
-  font-size: 50px;
+  padding-top:100px;
+  padding-bottom:30px;
+  padding-left: 90px;
+  font-size: 70px;
 }
-
 
 @media (min-width: 320px) {
  .banner-description{
@@ -179,7 +177,6 @@ export default {
 @media (min-width: 768px) {
  .banner-description{
    font-size: 40pt;
-   padding-bottom:10px;
  }
 
 }

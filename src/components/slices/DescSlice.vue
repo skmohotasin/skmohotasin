@@ -32,7 +32,6 @@ export default {
         align-items: center;
         justify-content: center;
         padding-top:0px;
-        
        
         
       }
@@ -54,17 +53,16 @@ export default {
 
 .button {
   background:white;
-  border-radius: 70px;
-  border:2px solid #ff009c;
-  color: #ff009c;
+  border-radius: 50px;
+  border:2px solid purple;
+  color: purple;
   font-size: 14px;
   font-weight: 700;
-  padding: 20px 40px;
-  position:relative;
-  top: 50%;
-  left: 40%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding: 15px 40px;
+  display: grid;
+  text-align: center;
+  margin-left:300px;
+  margin-right:300px;
  
 }
 .button:hover {
