@@ -6,11 +6,7 @@
     <div class="highlight-left">
     <div class="description">
     <h1><strong> final</strong>mile </h1>
-    <p class="desc"> We take local New Zealand consumer products cross border 
-      in the fastest and most efficient way, creating exceptional 
-      sales growth utilising our proven DTC model.  </p>
-    <p class="text"> For General Queries : <em>06 8766773</em></p>
-    <p class="text" > Email : <em>webstore@thebrandoutlet.co.nz</em> </p>
+    <p class="desc"> We come from the bottom of the world where inventiveness and grit come together naturally to create potential. <br>Our job is to catapult kiwi ventures to unlock their business possibilities. As owners we love what we do and it’s time to share that know-how with you.  </p>
     </div>
 
     <!--
@@ -37,14 +33,14 @@
     
 
     <div class="highlight-center">
-      <p> </p>
-      <h4><strong> Quick Links</strong></h4>
-      
-      <p><a href="https://finalmile.co.nz/" style="color:white;font-size:16pt">Home</a></p>
-      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">About Us</a> </p>
-      <p><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Approach</a></p>
-      <p><a href="https://finalmile.co.nz/page/our-brands" style="color:white;font-size:16pt">Our Brands</a></p>
-      <p><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Contact Us</a></p>
+           
+      <p style="margin:0em"><a href="https://finalmile.co.nz/" style="color:white;font-size:16pt">Home</a></p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">About Us</a> </p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Approach</a></p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/about-us" style="color:white;font-size:16pt">Results</a></p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/our-brands" style="color:white;font-size:16pt">Our Brands</a></p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Careers</a></p>
+      <p style="margin:0em"><a href="https://finalmile.co.nz/page/page-1" style="color:white;font-size:16pt">Partner with us</a></p>
 
     </div>
 
@@ -64,7 +60,14 @@
     
     </div>
     -->
+
+    <div class="highlight-right">
+      
+    <p class="text"> Phone : <em>06 8766773</em></p>
+    <p class="text" > Email : <em>webstore@thebrandoutlet.co.nz</em> </p>
     
+    </div>
+
     
 </div>
 
@@ -111,7 +114,6 @@ export default {
 .container {
    
         display:flex;
-        
         justify-content: center;
         background:#5b146f;
         max-width: 5000px;
@@ -120,23 +122,23 @@ export default {
        
       }
 
-.highlight-right {
-  padding-right:50px;
-  padding-left:50px;
-  order: 4;  
-  text-align: left;
-}
 
 .highlight-center {
-    padding-right:200px;
-    padding-left:80px;
+    padding-right:0px;
+    padding-left:0px;
     text-align:left;
-    
+     width:700px;
 }
 
 .highlight-left {
-  padding-right:70px;
-  padding-left:0px;
+  padding-right:300px;
+  padding-left:50px;
+}
+.highlight-right{
+  width:700px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align:left;
 }
 
 .text{
@@ -168,76 +170,35 @@ p{
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
-
-
-.footer {
-  max-width: 5000px;
-  text-align: center;
-  border-top: 1px solid #DADADA;
-  color:#ffffff;
-}
-
-.container {
-display:flex;
-background:#5b146f;
-max-width: 5000px;
-padding-top:50px;
-}
-
-.highlight-center {
-    padding-right:200px;
-    padding-left:80px;
-    text-align:left;
-}
-
-.text{
-  color:rgb(219, 59, 86);
-  font-size: 10pt;
-  text-align: center;
-}
-
-.text em{
-  color:white;
-  font-size: 10pt;
-}
-
 .desc{
   color:white;
   font-weight: normal;
   font-size:16pt;
-  padding-left: 15pt;
+  padding-left: 15px;
   
   text-align: left;
 }
-
-p{
-  margin-bottom: 1em;
+.container{
+  display: grid;
 }
-
-    .container{
-      display: block;
-    }
-    .description{
-      text-align: center;
-    }
-    .highlight-left{
-      padding-bottom: 15px;
-    }
-    .highlight-center{
-      text-align: center;
-      padding-bottom: 15px;
-    }
-
-    .logoo{
-    width: 20px;
-    height: 35px;
-    }
-    .copyright{
-      padding-top: 0px;
-    }
+.description{
+  text-align: left;
+  padding-left: 35pt;
+}
+.highlight-left{
+  padding-bottom: 15px;
+  padding-right:0px;
+  padding-left:0px;
+}
+.highlight-center{
+  text-align: left;
+  padding-left:35pt;
+  padding-bottom: 15px;
+  padding-right:0px;
+  width:300px;
   
-    
-  }
+}
+}
 
 
 

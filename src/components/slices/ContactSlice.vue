@@ -172,4 +172,31 @@ input[type=text] {
    text-align: center;
 }
 
+/*@media (min-width: 320px) {
+  .container{
+    display:block;
+  }
+  .highlight-right{
+    padding:0px;
+  }
+
+} */
+
+@media (min-width: 320px) {
+  .container{
+    display:grid;
+  
+  }
+  .highlight-right{
+    padding:0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    display:flex;
+  
+  }
+}
+
 </style>

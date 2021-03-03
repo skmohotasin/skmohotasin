@@ -90,6 +90,14 @@
             <template v-else-if="slice.slice_type === 'desc_slice'">
                 <desc-slice :slice="slice"/>
             </template>
+            <!-- Image  slice component -->
+            <template v-else-if="slice.slice_type === 'image_slice'">
+                <image-slice :slice="slice"/>
+            </template>
+             <!-- Approach  slice component -->
+            <template v-else-if="slice.slice_type === 'approach_slice'">
+                <approach-slice :slice="slice"/>
+            </template>
             
             
         </section>
@@ -120,6 +128,8 @@ const ImagesSlider = () => import("./slices/ImagesSlider.vue");
 const ContactSlice = () => import("./slices/ContactSlice.vue");
 const SlideshowSlice = () => import("./slices/SlideshowSlice.vue");
 const DescSlice = () => import("./slices/DescSlice.vue");
+const ImageSlice = () => import("./slices/ImageSlice.vue");
+const ApproachSlice = () => import("./slices/ApproachSlice.vue");
 
 export default {
   props: ['slices'],
@@ -146,7 +156,9 @@ export default {
     ImagesSlider,
     ContactSlice,
     SlideshowSlice,
-    DescSlice
+    DescSlice,
+    ImageSlice,
+    ApproachSlice
     
   },
 }

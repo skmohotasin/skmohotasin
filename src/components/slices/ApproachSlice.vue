@@ -16,12 +16,13 @@
 <script>
 export default {
   props: ['slice'],
-  name: 'work-picture'
+  name: 'approach-slice'
 }
 </script>
 
 <style scoped>
 .gallery {
+    background-color: #5b146f;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -33,25 +34,41 @@ export default {
   
 }
 .gallery-item {
-  -webkit-box-flex: 0 1 48%;
-  -moz-box-flex:  0 1 48%;
-  -webkit-flex:  0 1 48%;
-  -ms-flex:  0 1 48%;
-  flex: 0 1 48%;
-  
+  -webkit-box-flex: 0 1 50%;
+  -moz-box-flex:  0 1 50%;
+  -webkit-flex:  0 1 50%;
+  -ms-flex:  0 1 50%;
+  flex: 0 1 50%;
+  padding-top: 50px;
 }
-.gallery-link {
-  margin-top: -20px;
-  text-transform: uppercase;
-}
-/* Media Queries */
-@media (max-width: 320px) {
+
+
+/*Media Queries*/
+@media (min-width: 320px) {
   .gallery-item {
-    -webkit-box-flex: 100%;
-    -moz-box-flex:  100%;
-    -webkit-flex:  100%;
-    -ms-flex:  100%;
-    flex: 100%;
+    
+    -webkit-box-flex:auto;
+    -moz-box-flex:  auto;
+    -webkit-flex:  auto;
+    -ms-flex:  auto;
+    flex: auto; 
+    
+  }
+  
+
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    
+  -webkit-box-flex: 0 1 30%;
+  -moz-box-flex:  0 1 30%;
+  -webkit-flex:  0 1 30%;
+  -ms-flex:  0 1 30%;
+  flex: 0 1 30%;
+   
+    
   }
 }
+
 </style>
