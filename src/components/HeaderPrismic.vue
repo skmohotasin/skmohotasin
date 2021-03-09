@@ -1,19 +1,20 @@
 <template>
   <header class="site-header">
-    <router-link to="/" class="logo">
-    
-    
-    </router-link>
-   
-     
-    <nav>
-      <ul style="padding-left:10px;padding-right:10px">
-        <li v-for="menuLink in menuLinks" :key="menuLink.id">
-          <prismic-link :field="menuLink.link">{{ $prismic.richTextAsPlain(menuLink.label) }}</prismic-link>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-trasparent mobile-modified">
+      <div class="container-fluid">
+        <router-link to="/" class="logo ms-2 ms-md-3 ms-xl-5 text-white"><strong> final</strong>mile <img src="../assets/img/logo_footprint.png" alt="Finalmile" width="30" height="50"></router-link>
+        <button onclick="ColoredBackgroundFunction()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobilenav" aria-controls="mobilenav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mobilenav" onclick="AjaxFunction()">
+          <ul class="navbar-nav pt-5 px-3 px-sm-4 px-lg-0 pt-lg-0 ms-auto">
+            <li v-for="menuLink in menuLinks" :key="menuLink.id" class="nav-item">
+              <prismic-link :field="menuLink.link" index class="nav-link text-uppercase fadeInDown">{{ $prismic.richTextAsPlain(menuLink.label) }}</prismic-link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-   
   </header>
   
 </template>
@@ -45,85 +46,118 @@ export default {
 </script>
 
 <style>
-/* Site header */
 .site-header {
-  height: 0px;
-  padding: 0px 0;
-  
+  position: relative;
 }
-.site-header,
-.site-header a {
-  
-  color: #ffffff;
-  font-weight: 700;
-  
-}
-.site-header nav a:hover {
-  color: #72767B;
-}
-.homepage .site-header,
-.homepage .site-header a {
-  color:white;
-
+.navbar-dark .navbar-nav .nav-link.router-link-exact-active {
+  color: rgb(255 255 255);
 }
 
-.homepage .site-header nav a:hover {
-  color: #1052d6;
+.logo {
+  text-decoration: none;
 }
-.site-header .logo {
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 900;
+.navbar.mobile-modified {
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  z-index:1;
 }
-.site-header nav {
-  float: right;
-}
-.site-header nav ul {
-  margin: 0;
-}
-.site-header nav li {
-  display:initial;
-  margin-left: 40px;
-}
-
-.homepage-banner {
- 
- background:linear-gradient(to top left, #ff009c,#5b146f,#00a9ff,#ffd515);
-    max-width: 5000px;
-    margin: auto;
-    max-height: 2000px;
-    background-size:cover;
-    background-blend-mode: hard-light;
-    
-   
-    animation: hue-rotate alternate-reverse 10s infinite;
-    
-    
-}
-
-
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
-    opacity: 0.7;
-    
-    
+@media (min-width: 1400px) {
+  .logo {
+    font-size: 50px;
   }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-    -moz-filter: hue-rotate(360deg);
-    -ms-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
-    opacity: 0.9;
+}
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar.mobile-modified {
+    top: 15px;
+  }
+   .logo {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991px) {
+  #mobilenav{
+    z-index:3;
+    height: 100vh;
+  }
+  .navbar.mobile-modified {
+    top: 0px;
+  }
+  .navbar.mobile-modified.colored-background {
+    background-color: #5b146f;
+    position:fixed;
+  }
+  .logo {
+    font-size: 30px;
   }
 }
 
-
-
-
-
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@-moz-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
 </style>
-

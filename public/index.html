@@ -15,12 +15,47 @@
         }
     </script>
     <script src="https://static.cdn.prismic.io/prismic.min.js"></script>
+    <script>
+        function ColoredBackgroundFunction() {
+            var element = document.querySelector("nav.navbar.navbar-expand-lg");
+
+            if (element.classList) {
+                element.classList.toggle("colored-background");
+            } else {
+                var classes = element.className.split(" ");
+                var i = classes.indexOf("colored-background");
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push("colored-background");
+                element.className = classes.join(" ");
+            }
+        }
+
+        function AjaxFunction() {
+            ColoredBackgroundFunction();
+            var element = document.querySelector("#mobilenav");
+
+            if (element.classList) {
+                element.classList.toggle("show");
+            } else {
+                var classes = element.className.split(" ");
+                var i = classes.indexOf("show");
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push("show");
+                element.className = classes.join(" ");
+            }
+        }
+    </script>
 </head>
 
 <body>
     <noscript><strong>We're sorry but this project doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
 </body>
 
 </html>

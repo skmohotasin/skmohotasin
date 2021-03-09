@@ -5,19 +5,24 @@
           <div class="row">
             <div class="col-md-6">
                 <div class="mb-3">
-                    <input type="text" name="userName" class="form-control" placeholder="Your Name" value="" required>
+                    <input type="text" name="userName" class="form-control" placeholder="NAME" value="" required>
                 </div>
-                
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>I'M A</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
                 <div class="mb-3">
-                    <input type="text" name="userPhone" class="form-control" placeholder="Your Phone Number" value="" required>
+                    <input type="text" name="userPhone" class="form-control" placeholder="TELEPHONE" value="" required>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="mb-3">
-                    <input type="text" name="userEmail" class="form-control" placeholder="Your Email" value="" required>
+                    <input type="text" name="userEmail" class="form-control" placeholder="EMAIL" value="" required>
                 </div>
                 <div class="mb-3">
-                    <textarea name="userMsg" class="form-control" placeholder="Your Message" style="width: 100%; height: 150px;"></textarea>
+                    <textarea name="userMsg" class="form-control" placeholder="MESSAGE" style="width: 100%; height: 150px;"></textarea>
                 </div>
                 <div class="mt-3">
                     <input type="submit" name="Submit" class="btn btn-circle" value="Submit">

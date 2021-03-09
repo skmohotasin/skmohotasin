@@ -11,13 +11,9 @@
           </div>
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
             <ul class="list-group list-group-flush ms-xl-5 mb-lg-0 mt-4 mt-sm-0 p-0">
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="/" >Home</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/about-us">About Us</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/approach-us">Approach</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/result">Results</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/our-brands">Our Brands</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/page-1">Careers</a></li>
-              <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1"><a class="h6 text-white text-decoration-none" href="../page/page-1">Partner with us</a></li>
+              <li v-for="menuLink in menuLinks" :key="menuLink.id" class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1">
+                <prismic-link :field="menuLink.link" index class="h6 text-white text-decoration-none text-capitalize">{{ $prismic.richTextAsPlain(menuLink.label) }}</prismic-link>
+              </li>
             </ul>
           </div>
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
@@ -26,7 +22,7 @@
               <li class="text-lg-start text-md-start text-mb-start list-group-item bg-transparent border-bottom-0 m-0 p-1 colored-text">Phone : <a class="text-white text-decoration-none" href="mailto:webstore@thebrandoutlet.co.nz"><em>webstore@thebrandoutlet.co.nz</em></a></li>
             </ul>
             <div class="street-address ms-xl-5 mb-lg-0 mt-4 mt-sm-0 pt-sm-1 pt-md-4">
-              <p class="text-lg-start text-md-start text-mb-start m-0 p-1 text-white">xx Street name, City, postcode</P>
+              <p class="text-lg-start text-md-start text-mb-start m-0 p-1 text-white"></P>
             </div>
             <div class="social-media">
               <ul class="list-group list-group-horizontal ms-xl-5 mb-lg-0 mt-4 mt-sm-0 pt-sm-1 pt-md-4">
@@ -55,7 +51,7 @@
             </div>
           </div>
           <div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-4">
-            <p class="copyright text-center text-white"> @ 2021 Copyright.  All Rights Reserved by FinalMile </p>
+            <p class="copyright text-center text-white"></p>
           </div>
         </div>
       </div>
@@ -65,7 +61,26 @@
 
 <script>
 export default {
-  name: 'FooterPrismic'
+  name: 'FooterPrismic',
+  data () {
+    return {
+      menuContent: [],
+      menuLinks: []
+    }
+  },
+  methods: {
+    getMenu () {
+      //Query to get menu content
+      this.$prismic.client.getSingle('menu')
+        .then((menuContent) => {
+          this.menuContent = menuContent
+          this.menuLinks = menuContent.data.menu_links
+        })
+    },
+  },
+  created () {
+    this.getMenu()
+  }
 }
 </script>
 
