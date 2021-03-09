@@ -1,17 +1,14 @@
 <template>
-  <section class='highlight content-section'>
-  <div class="container">
-    <div class="highlight">
-      <prismic-rich-text class="text" :field="slice.primary.text"/>
-      <prismic-rich-text class="testing" :field="slice.primary.testing"/>
-      <prismic-rich-text class="description" :field="slice.primary.headline"/>
-      <p>
-        <prismic-link  class="button" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
+   <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+      <prismic-rich-text class="h5 heading-custom-color" :field="slice.primary.text"/>
+      <prismic-rich-text class="custom-color h1 fw-bold" :field="slice.primary.testing"/>
+      <prismic-rich-text class="description fw-light" :field="slice.primary.headline"/>
+      <p class="pt-2">
+        <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
       </p>
     </div>
-    
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -22,65 +19,21 @@ export default {
 </script>
 
 <style scoped>
-.highlight {
-  position: relative;
-  
-}
-
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:0px;
-        
-       
-        
-      }
-
-.text{
-  font-weight: bolder;
-  color:#ff009c;
-  font-size:12pt;
-  text-align: center;
-}
-.testing{
- color:#5b146f;
- font-weight: bolder;
- font-size: 36pt;
- text-align: center;
- 
-}
-
-
-.button {
-  background:white;
-  border-radius: 70px;
-  border:2px solid #ff009c;
+.btn-circle {
   color: #ff009c;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 20px 40px;
-  position:relative;
-  top: 50%;
-  left: 40%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
- 
+  border:2px solid #ff009c;
+  border-radius: 48px;
+  padding: 10px 20px;
 }
-.button:hover {
-  background: #c8c9cb;
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #ff009c;
 }
-@media (min-width: 320px) {
-  .container{
-    display:block;
-    padding:30px;
-
-  }
-
-  
+.custom-color{
+  color:#5b146f;
 }
-
-
- 
-
+.heading-custom-color{
+  color: #ff009c;
+}
 </style>

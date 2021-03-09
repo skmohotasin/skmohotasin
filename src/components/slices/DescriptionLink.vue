@@ -1,14 +1,11 @@
 <template>
-  <section class='highlight content-section'>
-  <div class="container">
-    <div class="highlight">
-      <prismic-rich-text class="text" :field="slice.primary.text"/>
-      <prismic-rich-text class="testing" :field="slice.primary.testing"/>
-      <prismic-rich-text class="description" :field="slice.primary.headline"/>
+   <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+      <prismic-rich-text class="h5 heading-custom-color" :field="slice.primary.text"/>
+      <prismic-rich-text class="custom-color h1 fw-bold pb-md-2" :field="slice.primary.testing"/>
+      <prismic-rich-text class="description fw-light" :field="slice.primary.headline"/>
     </div>
-    
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -19,52 +16,21 @@ export default {
 </script>
 
 <style scoped>
-.highlight {
-  position: relative;
-  
+.btn-circle {
+  color: #ff009c;
+  border:2px solid #ff009c;
+  border-radius: 48px;
+  padding: 10px 20px;
 }
-
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:0px;
-        
-      }
-
-.text{
-  font-weight: bolder;
-  color:#ff009c;
-  font-size:12pt;
-  text-align: center;
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #ff009c;
 }
-.testing{
- color:#5b146f;
- font-weight: bolder;
- font-size: 36pt;
- text-align: center;
- 
+.custom-color{
+  color:#5b146f;
 }
-
-.button {
-  background:white;
-  border-radius: 50px;
-  border:2px solid purple;
-  color: purple;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 15px 40px;
-  margin: 0;
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+.heading-custom-color{
+  color: #ff009c;
 }
-.button:hover {
-  background: #c8c9cb;
-}
-
-
-
 </style>

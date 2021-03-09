@@ -1,10 +1,11 @@
 <template>
   <section class="homepage">
+     
     <!-- Vue tag to add header component -->
     
     <!-- Button to edit document in dashboard -->
     <prismic-edit-button :documentId="documentId"/>
-    <section class="homepage-banner" style="height: 15vh; width:100%">
+    <section class="homepage-banner" style="height: 45vh; width:100%">
     <!-- Template for page title. -->
     <header-prismic/>
      <!-- <div class="custom-shape-divider-bottom-1611087996" style="position:relative"> -->
@@ -31,11 +32,10 @@
       </div>
       
     </section>
+      
     
-    <div class="container">
-      <!-- Slices block component -->
+          <!-- Slices block component -->
       <slices-block :slices="slices"/>
-    </div>
   </section>
 </template>
 
@@ -47,7 +47,7 @@ export default {
   name: 'home-page',
   components: {
     HeaderPrismic,
-    SlicesBlock,
+    SlicesBlock
   },
   data () {
     return {
@@ -109,7 +109,6 @@ export default {
 .custom-shape-divider-bottom-1611087996 .shape-fill {
     fill: #FFFFFF;
 }
-
 */
 .homepage-banner {
   margin: -70px 0 80px;
@@ -167,22 +166,15 @@ export default {
   padding-left: 20px;
   font-size: 50px;
 }
-
-
 @media (min-width: 320px) {
  .banner-description{
    font-size: 10pt;
  }
-
 }
-
 @media (min-width: 768px) {
  .banner-description{
    font-size: 40pt;
    padding-bottom:10px;
  }
-
 }
-
-
 </style>

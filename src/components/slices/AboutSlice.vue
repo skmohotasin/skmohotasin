@@ -1,20 +1,21 @@
 <template>
-  <section class='highlight content-section'>
-  <div class="container">
-    <div class="highlight-right">
-      <prismic-rich-text class="text" :field="slice.primary.text"/>
-      <prismic-rich-text class="testing" :field="slice.primary.testing"/>
-      <prismic-rich-text class="description" :field="slice.primary.headline"/>
-      <p>
-        <prismic-link class="aboutbutton" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
-      </p>
-
+    <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+      <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 py-2 py-md-0 mx-auto text-center">
+            <prismic-image :field="slice.primary.featured_image" class="img-responsive"/>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 py-2 py-md-0 mx-auto text-center">
+              <prismic-rich-text class="h5 heading-custom-color" :field="slice.primary.text"/>
+              <prismic-rich-text class="custom-color h1 fw-bold pb-md-2" :field="slice.primary.testing"/>
+              <prismic-rich-text class="description fw-light" :field="slice.primary.headline"/>
+              <p class="pt-2 pt-md-3">
+                <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
+              </p>
+          </div>
+        </div>
     </div>
-    <div class="highlight-left">
-      <prismic-image :field="slice.primary.featured_image"/>
-    </div>
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -25,103 +26,21 @@ export default {
 </script>
 
 <style scoped>
-.highlight {
-  position: relative;
-  overflow: auto;
+.btn-circle {
+  color: #5b146f;
+  border:2px solid #5b146f;
+  border-radius: 48px;
+  padding: 10px 100px;
 }
-
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:0px;
-      }
-
-.highlight-right {
-  flex-basis: 70%;
-  order: 2;
-  padding-left: 40px;
-  
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #5b146f;
 }
-.highlight-left {
-  width: 100%;
-  
+.custom-color{
+  color:#5b146f;
 }
-.text{
-  font-weight: bolder;
-  color:#ff009c;
-  font-size:12pt;
+.heading-custom-color{
+  color: #ff009c;
 }
-.testing{
- color:#5b146f;
- font-weight: bolder;
- font-size: 30pt;
-}
-
-.aboutbutton {
-background:white;
-  border-radius: 50px;
-  border:2px solid purple;
-  color: purple;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 15px 40px;
-  display: grid;
-  text-align: center;
-  margin-left:50px;
-  margin-right:50px;
-}
-.aboutbutton:hover {
-  background: #c8c9cb;
-}
-
-
-
-/*Media Queries*/
-@media (min-width: 320px) {
-  .container{
-    display:block;
-    width:100%;
-   
-    
-  }
- 
-    
-  
-  
-
-}
-/*Small devices (landscape phones, less than 768px)*/
-@media (min-width: 768px) {
-.container{
-    display:block;
-    width:90%;
-    
-  }
-}
-
-/*Medium devices (tablets, less than 992px)*/
-@media (min-width: 992px) {
-.container{
-    display:flex;
-    width:90%;
-    justify-content: center;
-  }
-}
-
-/*Large devices (desktops, less than 1200px)*/
-@media (min-width: 1200px) {
-.container{
-    display:flex;
-    width:100%;
-    padding-left:0px;
-    
-  }
-}
-
-
-
-
-
-
 </style>

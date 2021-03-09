@@ -1,35 +1,36 @@
 <template>
-  <section class='app-slice content-section'>
-    <prismic-rich-text :field="slice.primary.gallery_title"/>
-    <div class="gallery">
-      <div v-for="item in slice.items" :key="item.id" class="gallery-item">
-        
-        <div class="description1">
-          <h3>
-        <prismic-rich-text  class="title1" :field="item.image_description1"/>
-        <prismic-rich-text class="desc1" :field="item.desc1"/>
-          </h3>
-        </div>
-
-        <div class="description2">
-          <h3>
-        <prismic-rich-text  class="title2" :field="item.image_description2"/>
-        <prismic-rich-text class="desc2" :field="item.desc2"/>
-          </h3>
-        </div>
-
-      <div class="description3">
-        <h2>
-        <prismic-rich-text  class="title3" :field="item.image_description3"/>
-        <prismic-rich-text class="desc3" :field="item.desc3"/>
-        </h2>
-      </div>
-<p> <prismic-link class="approachbutton" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link> </p>
-      </div>
-    
-        
+ <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+     <prismic-rich-text :field="slice.primary.gallery_title"/>
     </div>
-  </section>
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+      <div class="row" v-for="item in slice.items" :key="item.id">
+         <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-bottom">
+            <div class="col-xxl-11 col-lg-12 col-md-12 mb-4 mb-md-0 m-md-auto px-5 px-md-1 px-lg-3 px-xxl-5 padding-t-b-3 py-md-5 text-center bg-color-01">
+            <prismic-rich-text  class="h3 text-white" :field="item.image_description1"/>
+            <prismic-rich-text class="desciption text-white" :field="item.desc1"/>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-bottom">
+            <div class="col-xxl-11 col-lg-12 col-md-12 mb-4 mb-md-0 m-md-auto px-5 px-md-1 px-lg-3 px-xxl-5 padding-t-b-3 py-md-6 text-center bg-color-02">
+            <prismic-rich-text  class="h3 text-white" :field="item.image_description2"/>
+            <prismic-rich-text class="desciption text-white" :field="item.desc2"/>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-bottom">
+            <div class="col-xxl-11 col-lg-12 col-md-12 m-md-auto px-5 px-md-1 px-lg-3 px-xxl-5 padding-t-b-3 py-md-7 text-center bg-color-03">
+            <prismic-rich-text  class="h3 text-white" :field="item.image_description3"/>
+            <prismic-rich-text class="desciption text-white"  :field="item.desc3"/>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+      <p class="pt-2 pt-md-3">
+        <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -40,6 +41,32 @@ export default {
 </script>
 
 <style scoped>
+.bg-color-01, .bg-color-02, .bg-color-03 {
+  border-radius: 10px;
+}
+.bg-color-01 {
+  background-color: #ff009c;
+}
+.bg-color-02 {
+  background-color: #00a9ff;
+}
+.bg-color-03 {
+  background-color: #5b146f;
+}
+.padding-t-b-3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .py-md-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .py-md-7 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
 .gallery-item {
   display: flex;
   align-items: flex-end;

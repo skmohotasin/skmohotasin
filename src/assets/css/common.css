@@ -31,10 +31,11 @@ a {
   color: #72767B;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing : 0.35px;
+  letter-spacing : 0px;
   line-height: 28px;
   text-decoration: none;
   font-family:'Poppins', sans-serif;
+ 
 }
 p a {
   /*text-decoration: underline;*/
@@ -59,7 +60,7 @@ h1 {
 }
 h2, h2 a {
   margin-bottom: 1rem;
-  color: #484d52;
+  color: #464646;
   font-size: 16pt;
   font-weight: 700;
   letter-spacing : 0.85px;
@@ -69,11 +70,10 @@ h2, h2 a {
 h3, h3 a {
   font-family:'Poppins', sans-serif;
   margin-bottom: 3rem;
-  Color: #484d52;
+  Color: #464646;
   font-size: 16pt;
-  font-weight: 400;
   letter-spacing : 0.52px;
-  line-height: 34px;
+  line-height: 1.6em;
 }
  p,pre, ul, ol {
   margin-bottom: 3rem;

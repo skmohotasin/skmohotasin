@@ -1,134 +1,46 @@
 <template>
-  <section class='highlight content-section'>
-  <div class="container">
-    <div class="highlight-left">
-      <prismic-rich-text style="margin-bottom:-2em" class="text" :field="slice.primary.text"/>
-      <prismic-rich-text style="margin-bottom:-2em" class="testing" :field="slice.primary.testing"/>
-      <prismic-rich-text class="title" :field="slice.primary.title"/>
-      <prismic-rich-text class="headline" :field="slice.primary.headline"/>
-      <p>
-        <prismic-link class="work_button" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
-      </p>
-    </div>
-    <div class="highlight-right">
-      <prismic-image :field="slice.primary.featured_image"/>
+    <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+      <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="order-md-2 col-xl-6 col-lg-6 col-md-6 col-sm-12 py-2 py-md-0 mx-auto text-center">
+            <prismic-image :field="slice.primary.featured_image" class="img-responsive"/>
+          </div>
+          <div class="order-md-1 col-xl-6 col-lg-6 col-md-6 col-sm-12 py-2 py-md-0 mx-auto text-center">
+              <prismic-rich-text class="h5 heading-custom-color" :field="slice.primary.text"/>
+              <prismic-rich-text class="custom-color h1 fw-bold pb-md-2" :field="slice.primary.testing"/>
+              <prismic-rich-text class="description fw-light" :field="slice.primary.headline"/>
+              <p class="pt-2 pt-md-3">
+                <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
+              </p>
+          </div>
+        </div>
     </div>
   </div>
-  </section>
 </template>
 
 <script>
 export default {
   props: ['slice'],
-  name: 'work-slice'
+  name: 'about-slice'
 }
 </script>
 
 <style scoped>
-
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:0px;
-        text-align:justify;
-      }
-.highlight {
-  position: relative;
-  overflow: auto;
+.btn-circle {
+  color: #5b146f;
+  border:2px solid #5b146f;
+  border-radius: 48px;
+  padding: 10px 100px;
 }
-.highlight-left {
-  width: 43%;
-  float: left;
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #5b146f;
 }
-.highlight-right {
-  padding-left:40px;
-  width: 48%;
-  float: right;
+.custom-color{
+  color:#5b146f;
 }
-.text{
-  font-weight: bolder;
-  color:#ff009c;
-  font-size:12pt;
+.heading-custom-color{
+  color: #ff009c;
 }
-.testing{
- color:#5b146f;
- font-weight: bolder;
- font-size: 36pt;
-}
-.work_button {
-  background:white;
-  border-radius: 50px;
-  border:2px solid purple;
-  color: purple;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 15px 40px;
-  display: grid;
-  text-align: center;
-  margin-left:80px;
-  margin-right:80px;
-}
-.work_button:hover {
-  background: #c8c9cb;
-}
-
-.title{
-  padding-top:0px;
-  padding-bottom:70px;
-}
-
-/*Media Queries*/
-@media (min-width: 320px) {
-  
-
-   .container {
-        display:block;
-        text-align: left;
-
-  }
-
-.highlight-left{
-  width:100%;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left:10px
-  
-}
-
-.highlight-right{
- 
-  width:90%;
-}
-
-  .text{
-    
-    text-align: center;
-  }
-  .testing{
-    
-    text-align: center;
-    font-size: 30pt;
-  }
-
-  .work_button{
-
-    font-size: 15px;
-  }
-  .h3{
-    font-size: 50px;
-  }
-
-}
-
-@media (min-width: 768px) {
-
-  .container {
-        display:flex;
-  }
-
-}
-  
-
-
 </style>

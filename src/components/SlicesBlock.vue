@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <main class="container-fluid">
         <!-- Slice section template -->
-        <section v-for="(slice, index) in slices" :key="'slice-' + index">
+        <section v-for="(slice, index) in slices" :key="'slice-' + index"  :class="'section_' + slice.slice_type +' index-'+ index">
             <!-- Text slice component -->
             <template v-if="slice.slice_type === 'text_section'">
                 <text-slice :slice="slice"/>
@@ -101,7 +101,7 @@
             
             
         </section>
-    </div>
+    </main>
 </template>
 
 <script>

@@ -1,8 +1,12 @@
 <template>
-  <section class='content-section quote'>
-    <blockquote class="block-quotation">{{ $prismic.richTextAsPlain(slice.primary.quote_text) }}</blockquote>
-    <p style="text-align:center;font-family:'Poppins', sans-serif;color:#5b146f;padding-top:20px">Sarah Kennedy - CEO Calocurb</p>
-  </section>
+<div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+  <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+    <blockquote class="blockquote blockquote-custom-color">
+      <p class="mb-0 pb-2">{{ $prismic.richTextAsPlain(slice.primary.quote_text) }}</p>
+    </blockquote>
+     <footer class="blockquote-footer Source-custom-color fw-bold"><cite title="Source Title">Sarah Kennedy - CEO Calocurb</cite></footer>
+  </div>
+</div>
 </template>
 
 <script>
@@ -13,34 +17,29 @@ export default {
 </script>
 
 <style scoped>
-.quote blockquote {
-  display: block;
-  /*font-family: 'Lora', Serif;*/
-  font-family:'Poppins', sans-serif; 
-  font-size: 25px;
-  
-  
-  color: #ff009c; 
-  letter-spacing : 1.14;
-  line-height: 1.5em;
-  quotes: "\201C""\201D""\2018""\2019";
-  text-align: center;
+.Source-custom-color{
+  color:#5b146f;
 }
-.quote blockquote:before,
-.quote blockquote:after {
+.blockquote-custom-color{
   color: #ff009c;
-  content: open-quote;
-  /*font-family: 'Lora', Serif;*/
- font-family:'Poppins', sans-serif;
-  font-size: 2em;
+}
+.blockquote p{
+  display: block;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote p:before,
+.blockquote p:after {
   font-weight: 500;
-  line-height: 0.1em;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 2em;
   vertical-align: -0.3em;
+  line-height: 0.1em;
 }
-.quote blockquote:after {
+.blockquote p:before {
+  content: open-quote;
+  margin-right: 0.2em;
+}
+.blockquote p:after {
   content: close-quote;
+  margin-left: 0.2em;
 }
-
 </style>

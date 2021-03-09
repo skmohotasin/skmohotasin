@@ -1,8 +1,5 @@
 <template>
   <header class="site-header">
-    
-       
-       
     <router-link to="/" class="logo">
     
     
@@ -24,7 +21,6 @@
 
 <script>
 export default {
-  
   name: 'HeaderPrismic',
   data () {
     return {
@@ -45,8 +41,6 @@ export default {
   created () {
     this.getMenu()
   }
-
-  
 }
 </script>
 

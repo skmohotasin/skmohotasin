@@ -1,44 +1,22 @@
 <template>
-  <section class='highlight content-section'>
-  <div class="container">
-  <div class="container1">
-    <counter1>
-      
-    </counter1>
-     
-   </div>
-   <div class="container3">
-    <counter5>
-      
-    </counter5>
-   </div>
-    <div class="container2">
-    <counter3>
-      
-    </counter3>
-   </div>
+ <div class="row py-3 py-md-3 py-lg-5 my-4 my-md-0 custom-bg-color">
+    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+      <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+             <counter1></counter1>
+            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text1"/>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+            <counter3></counter3>
+            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text5"/>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
+            <counter5></counter5>
+            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text11"/>
+          </div>
+      </div>
+    </div>
   </div>
-
-
-  <div class="containerr">
-  
-    <counter2 style="line-height:0em">
-      <prismic-rich-text  style="font-sixe:20px;color:white;padding-right:10px" class="text1" :field="slice.primary.text1"/>
-    </counter2>
-
-    <counter6 style="line-height:0em">
-      <prismic-rich-text  style="font-sixe:20px;color:white;padding-right:50px" class="text5" :field="slice.primary.text5"/>
-    </counter6>
-
-    <counter4 style="line-height:0em">
-      <prismic-rich-text  style="font-sixe:20px;color:white; padding-right:30px" class="text11" :field="slice.primary.text11"/>
-    </counter4>
-
-  </div>
-
-
-
-  </section>
 </template>
 
 <script>
@@ -49,27 +27,31 @@ export default {
 </script>
 
 <style scoped>
+.custom-bg-color {
+  background:#5b146f;
+}
+counter1, counter3, counter5 {
+  font: 700 50px system-ui;
+}
+@media (min-width: 1200px) { 
+  counter1, counter3, counter5 {
+    font: 700 70px system-ui;
+  }
+ }
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
   inherits: false;
 }
-.comment1{
-  color:white;
-}
 counter1 {
-
 -webkit-animation: counterone 10s ;
 -moz-animation: counterone 10s ;
 -ms-animation: counterone 10s ;
 animation: counterone 10s ;
-
   /*animation: counterone 10s ;*/
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   counter-reset: num var(--num);
-  font: 700 70px system-ui;
-  
   padding: 0rem;
   color:#ffffff;
 }
@@ -110,10 +92,8 @@ counter3 {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   counter-reset: num var(--num);
-  font: 700 70px system-ui;
   padding: 0rem;
   color:#ffffff;
-  
 }
 
 @keyframes counterthree {
@@ -122,7 +102,6 @@ counter3 {
   }
   to {
     --num: 374000;
-    
   }
 }
 
@@ -135,7 +114,6 @@ counter5 {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   counter-reset: num var(--num);
-  font: 700 70px system-ui;
   padding: 0rem;
   color:#ffffff;
 }
@@ -146,139 +124,12 @@ counter5 {
   }
   to {
     --num: 500000;
-    
   }
 }
-
 
 counter5::after {
   content: counter(num);
 }
-
-
-
-.container{
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-   flex-wrap: nowrap;
-   background:#5b146f;
-  justify-content: space-around;
-  margin-block-start: 0px;
-  padding:30px;
-  
-  
-}
-.containerr{
-   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  background:#5b146f;
-  justify-content: space-around;
-  padding:30px;
-  
-  
-  
-}
-
-@media (min-width: 320px) {
-
-  counter5::after {
-  
-  font-size: 25px;  
-}
-counter3::after {
-  font-size: 25px;
-  padding: 2rem;
-}
-counter1::after {
-  font-size: 25px;
-  padding: 2rem;
-}
-.containerr{
-  font-size: 6px;
-}
-.container1{
-  height: 10px;
-}
-.text1{
-  font-size:6pt;
-}
-
-.container{
-  display: flex;
-  margin-left:15px;
-  padding-left:20px;
-  padding-right:20px;
-  width: 85%;
-}
-.containerr{
-  display: flex;
-  margin-left:15px;
-  padding-left:20px;
-  padding-right:20px;
-  width: 85%;
-}
-
-
-
-
-
-}
-
-@media (min-width: 768px) {
-
-  counter5::after {
-  
-  font-size: 70px;  
-}
-counter3::after {
-  font-size: 70px;
-  padding: 2rem;
-}
-counter1::after {
-  font-size: 70px;
-  padding: 2rem;
-}
-.containerr{
-  font-size: 16px;
-}
-.text1{
-   font-family:'Poppins', sans-serif;
-  font-size:16px;
-}
-.container1{
-  height: 20px;
-}
-
-
-.container{
-  display: flex;
-  margin-left:15px;
-  padding-left:20px;
-  padding-right:20px;
-  width: 90%;
-}
-.containerr{
-  display: flex;
-  margin-left:15px;
-  padding-left:20px;
-  padding-right:20px;
-  width: 90%;
-}
-
-
-
-
-
-}
-
-
 </style>
 
 

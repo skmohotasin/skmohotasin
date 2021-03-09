@@ -1,53 +1,32 @@
 <template>
-  <section class='highlight content-section'>
-    
-  <div class="container">
-    <div class="highlight-right">
-    <div class="email">
-    <label for="email" >Email</label>
-    </div>
-    <p>
-    <input type="email" id="email" name="email" placeholder="email@email.com">
-    </p>
-
-    <div class="company">
-    <label for="company">Company</label>
-    </div>
-    <p>
-    <input type="text" id="company" name="company" placeholder="Your company's name">
-    </p>
-
-    
-
-    
-    </div>
-    <div class="highlight-left">
-      <div class="name">
-      <label for="name">Name</label>
+  <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
+      <div class="col-xl-8 col-lg-10 col-md-10 col-sm-12 mx-auto text-center">
+        <form method="post">
+          <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="text" name="userName" class="form-control" placeholder="Your Name" value="" required>
+                </div>
+                
+                <div class="mb-3">
+                    <input type="text" name="userPhone" class="form-control" placeholder="Your Phone Number" value="" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <input type="text" name="userEmail" class="form-control" placeholder="Your Email" value="" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="userMsg" class="form-control" placeholder="Your Message" style="width: 100%; height: 150px;"></textarea>
+                </div>
+                <div class="mt-3">
+                    <input type="submit" name="Submit" class="btn btn-circle" value="Submit">
+                </div>
+            </div>
+          </div>
+        </form>
       </div>
-      <p>
-      <input type="text" id="name" name="name" placeholder="Your name..">
-      </p>
-      
-      
-      <div class="message">
-      <label for="Message">Message</label>
-      </div>
-      <p>
-    <input type="text" id="description" name="description" placeholder="Message">
-    </p>
-      
-      
-      
-
-    </div>
-    </div>
-    
-    <input type="submit" value="Submit">
-
-    
-
-  </section>
+  </div>
 </template>
 
 <script>
@@ -57,146 +36,16 @@ export default {
 }
 </script>
 
-<style scoped>
-
-
-.container {
-  
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top:50px;
-        border-style: solid;
-        border-width: 2px 2px 2px 2px;
-        border-color: whitesmoke;
-        
-        
-      }
-
-.highlight-right {
-  order: 5;
-  padding-left: 200px;
-  
+<style>
+.btn-circle {
+  color: #5b146f;
+  border:2px solid #5b146f;
+  border-radius: 48px;
+  padding: 10px 100px;
 }
-
-input[type=text] {
-  width: 300px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #5b146f;
 }
-
-input[type=submit] {
-  width: 100%;
-  background-color: purple;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-
-input[type=submit]:hover {
-  background-color: rgb(177, 7, 177);;
-}
-
-input[type=email]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  border:none;
-  border-bottom: 2px dotted #555;
-}
-
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  border:none;
-  border-bottom: 2px dotted #555;
-  
-}
-
-input:focus {
-  border: 3px solid #555;
-}
-
-.email{
-  border-radius: 15px;
-  background: #00a9ff;
-  padding: 10px 15px 10px 15px;
-  width: 50px;
-  margin-left:120px;
-}
-.company{
-  border-radius: 15px;
-  background: #00a9ff;
-  padding: 10px 15px 10px 15px;
-  width: 100px;
-  margin-left:100px;
-}
-.name{
-  border-radius: 15px;
-  background:#00a9ff;
-  padding: 10px 15px 10px 15px;
-  width: 60px;
-  margin-left:100px;
-}
-.message{
-  border-radius: 15px;
-  background: #00a9ff;
-  padding: 10px 15px 10px 15px;
-  width: 90px;
-  margin-left:100px;
-}
-
-input[type=text] {
-  border:none;
-  border-bottom: 2px dotted #555;
-}
-
-::-webkit-input-placeholder {
-   text-align: center;
-}
-
-/*@media (min-width: 320px) {
-  .container{
-    display:block;
-  }
-  .highlight-right{
-    padding:0px;
-  }
-
-} */
-
-@media (min-width: 320px) {
-  .container{
-    display:grid;
-  
-  }
-  .highlight-right{
-    padding:0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container{
-    display:flex;
-  
-  }
-}
-
 </style>

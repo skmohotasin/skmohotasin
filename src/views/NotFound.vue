@@ -10,13 +10,13 @@
   </div>
 </template>
 
-<script>
-import HeaderPrismic from '../components/HeaderPrismic.vue'
+// <script>
+// import HeaderPrismic from '../components/HeaderPrismic.vue'
 
-export default {
-  name: 'NotFound',
-  components: {
-    HeaderPrismic
-  }
-}
-</script>
+// export default {
+//   name: 'NotFound',
+//   components: {
+//     HeaderPrismic
+//   }
+// }
+// </script>
