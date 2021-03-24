@@ -1,76 +1,138 @@
 <template>
-  <section class='image-gallery content-section'>
-    <prismic-rich-text :field="slice.primary.gallery_title"/>
-    <div class="gallery">
-      <div v-for="item in slice.items" :key="item.id" class="gallery-item">
-        <prismic-image :field="item.image"/>
-        <prismic-rich-text :field="item.image_description"/>
-        <p>
-          <prismic-link :field="item.link" class="gallery-link">{{ $prismic.richTextAsPlain(item.link_label) }}</prismic-link>
-        </p>
-      </div>
+    <div class="row">
+      <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center gallery">
+        <div class="row">
+          <template v-if="$prismic.richTextAsPlain(slice.primary.gallery_title) !== ''">
+            <div class="col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+              <prismic-rich-text :field="slice.primary.gallery_title" :class="'title pb-4'"/>
+            </div>
+          </template>
+          <template v-for="(item,index) in slice.items">
+              <template v-if="index <= 2">
+                <div v-bind:class="'col-xl-' + (12/slice.items.length) + ' col-lg-' + (12/slice.items.length) + ' col-md-6 col-xs-12 mb-4 mb-md-0 mx-auto px-0 text-center gallery-item item-'+ index" :key="item.id + value">
+                  <div class="gallery-item-inner">
+                    <prismic-image :field="item.image" class="img-responsive"/>
+                      <div class="gallery-item-text-area">
+                        <div class="gallery-item-desciption d-inline-block align-middle text-white p-4 m-0">
+                          <div class="d-block mb-4"><prismic-rich-text :field="item.image_description"/></div>
+                           <template v-if="$prismic.richTextAsPlain(item.link_label) !== ''">
+                            <prismic-link :field="item.link" class="btn-circle">{{ $prismic.richTextAsPlain(item.link_label) }}</prismic-link>
+                           </template>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </template>
+              <template v-else-if="index >= 3">
+                <div v-bind:class="'col-xl-' + (12/slice.items.length) + ' col-lg-' + (12/slice.items.length) + ' col-md-6 col-xs-12 mb-4 mb-md-0 mx-auto px-0 text-center gallery-item item-'+ index" :key="item.id">
+                  <div class="gallery-item-inner">
+                    <prismic-image :field="item.image" class="img-responsive"/>
+                      <div class="gallery-item-text-area">
+                        <div class="gallery-item-desciption d-inline-block align-middle text-white p-4 m-0">
+                          <div class="d-block mb-4"><prismic-rich-text :field="item.image_description"/></div>
+                            <template v-if="$prismic.richTextAsPlain(item.link_label) !== ''">
+                            <prismic-link :field="item.link" class="btn-circle">{{ $prismic.richTextAsPlain(item.link_label) }}</prismic-link>
+                            </template>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </template>
+            </template>
+        </div>
     </div>
-  </section>
+  </div>
 </template>
+
+
 
 <script>
 export default {
   props: ['slice'],
   name: 'image-gallery'
 }
+
+// function imageresize(target) {
+//     var width = target.offsetWidth / 1.2;
+//     console.log(target.children[0].height, width);
+//     target.children[0].height = width;
+// }
+// window.addEventListener('load', (event) => {
+//     var target = document.querySelectorAll(".width-detect") ? document.querySelectorAll(".width-detect") : null;
+//     if (target != null && window.innerWidth >= 992) {
+//         target.forEach(function(find) {
+//             imageresize(find);
+//         });
+//     }
+// });
 </script>
 
 <style scoped>
-.gallery {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-  -webkit-justify-content: space-between; 
-  justify-content: space-between; 
-  
+/* @media (min-width: 992px) {
+  .width-detect img {
+    min-height: 230px;
+  }
 }
+@media (min-width: 1200px) {
+.width-detect img {
+    min-height: 222px;
+  }
+}
+@media (min-width: 1400px) {
+.width-detect img {
+    min-height: 259px;
+  }
+}
+@media (min-width: 1600px) {
+  .width-detect img {
+    min-height: 296px;
+  }
+}
+.width-detect img {
+   min-height: 352px;
+   object-fit: cover;
+} */
 .gallery-item {
-  -webkit-box-flex: 0 1 30%;
-  -moz-box-flex:  0 1 30%;
-  -webkit-flex:  0 1 30%;
-  -ms-flex:  0 1 30%;
-  flex: 0 1 30%;
-  
+  position: relative;
 }
-.gallery-link {
-  margin-top: -20px;
-  text-transform: uppercase;
+.gallery-item-text-area {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  position: absolute;
+  text-align: center;
+  background:linear-gradient(to top left, #ff009c,#00a9ff);
+  margin: auto;
 }
-
-/*Media Queries*/
-@media (min-width: 320px) {
-  .gallery-item {
-    
-    -webkit-box-flex:auto;
-    -moz-box-flex:  auto;
-    -webkit-flex:  auto;
-    -ms-flex:  auto;
-    flex: auto; 
-    
-  }
-  
-
+.gallery-item-text-area:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 0
 }
 
-@media (min-width: 768px) {
-  .gallery-item {
-    
-  -webkit-box-flex: 0 1 30%;
-  -moz-box-flex:  0 1 30%;
-  -webkit-flex:  0 1 30%;
-  -ms-flex:  0 1 30%;
-  flex: 0 1 30%;
-   
-    
-  }
+.gallery-item-inner:hover .gallery-item-text-area {
+    opacity: 1;
+    filter: alpha(opacity=100)
 }
 
+.btn-circle {
+  text-decoration: none;
+  color: #fff;
+  border:2px solid #fff;
+  border-radius: 48px;
+  padding: 10px 20px;
+}
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #5b146f;
+  background: #5b146f;
+}
 </style>

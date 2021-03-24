@@ -1,6 +1,6 @@
 <template>
  <div class="row py-3 py-md-3 py-lg-5 my-4 my-md-0 custom-bg-color">
-    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
       <div class="row">
           <div class="col-xl-4 col-lg-4 col-md-4 text-center">
              <div class="counter1"></div>

@@ -1,9 +1,9 @@
 <template>
  <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
-    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
      <prismic-rich-text :field="slice.primary.gallery_title"/>
     </div>
-    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
       <div class="row" v-for="item in slice.items" :key="item.id">
          <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-bottom">
             <div class="col-xxl-11 col-lg-12 col-md-12 mb-4 mb-md-0 m-md-auto px-5 px-md-1 px-lg-3 px-xxl-5 padding-t-b-3 py-md-5 text-center bg-color-01">
@@ -25,10 +25,12 @@
          </div>
       </div>
     </div>
-    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
-      <p class="pt-2 pt-md-3">
-        <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
-      </p>
+    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+      <template v-if="$prismic.richTextAsPlain(slice.primary.link_label) !== ''">
+        <p class="pt-2 pt-md-3">
+          <prismic-link  class="btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.link_label) }}</prismic-link>
+        </p>
+      </template>
     </div>
   </div>
 </template>
@@ -67,6 +69,19 @@ export default {
     padding-bottom: 6rem;
   }
 }
+.btn-circle {
+ text-decoration: none;
+  color: #ff009c;
+  border:2px solid #ff009c;
+  border-radius: 48px;
+  padding: 10px 20px;
+}
+.btn-circle:hover {
+  color: #fff;
+  border:2px solid #fff;
+  background: #ff009c;
+}
+
 .gallery-item {
   display: flex;
   align-items: flex-end;

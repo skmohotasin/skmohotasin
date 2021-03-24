@@ -50,7 +50,7 @@
             <template v-else-if="slice.slice_type === 'brand_outlet'">
                 <brand-outlet :slice="slice"/>
             </template>
-             <!-- Description Slice slice component -->
+             <!-- Description Slice slice component-->
             <template v-else-if="slice.slice_type === 'description_slice'">
                 <description-slice :slice="slice"/>
             </template>
@@ -94,12 +94,42 @@
             <template v-else-if="slice.slice_type === 'image_slice'">
                 <image-slice :slice="slice"/>
             </template>
-             <!-- Approach  slice component -->
-            <template v-else-if="slice.slice_type === 'approach_slice'">
-                <approach-slice :slice="slice"/>
+            <!-- Case  slice component -->
+            <template v-else-if="slice.slice_type === 'case_slice'">
+                <case-slice :slice="slice"/>
             </template>
-            
-            
+            <!-- Career  slice component -->
+            <template v-else-if="slice.slice_type === 'career_slice'">
+                <career-slice :slice="slice"/>
+            </template>
+            <!-- Square Image Gallery  slice component -->
+            <template v-else-if="slice.slice_type === 'square_image_gallery'">
+                <square-image-gallery :slice="slice"/>
+            </template>
+            <!-- Square Image Gallery component -->
+            <template v-else-if="slice.slice_type === 'rectangular_image_gallery'">
+                <rectangular-image-gallery :slice="slice"/>
+            </template>
+            <!-- Case Study Slice component -->
+            <template v-else-if="slice.slice_type === 'case_study_slice'">
+                <case-study-slice :slice="slice"/>
+            </template>
+            <!-- Profile Slice component -->
+            <template v-else-if="slice.slice_type === 'profile_slice'">
+                <profile-slice :slice="slice"/>
+            </template>
+            <!-- Blank Space component -->
+            <template v-else-if="slice.slice_type === 'blank_space'">
+                <blank-space :slice="slice"/>
+            </template>
+            <!-- ArrowSlice component -->
+            <template v-else-if="slice.slice_type === 'arrow_slice'">
+                <arrow-slice :slice="slice"/>
+            </template>
+            <!-- Icon Area component -->
+            <template v-else-if="slice.slice_type === 'icon_area'">
+                <icon-area :slice="slice"/>
+            </template>
         </section>
     </main>
 </template>
@@ -129,7 +159,15 @@ const ContactSlice = () => import("./slices/ContactSlice.vue");
 const SlideshowSlice = () => import("./slices/SlideshowSlice.vue");
 const DescSlice = () => import("./slices/DescSlice.vue");
 const ImageSlice = () => import("./slices/ImageSlice.vue");
-const ApproachSlice = () => import("./slices/ApproachSlice.vue");
+const CaseSlice = () => import("./slices/CaseSlice.vue");
+const CareerSlice = () => import("./slices/CareerSlice.vue");
+const SquareImageGallery = () => import("./slices/SquareImageGallery.vue");
+const RectangularImageGallery = () => import("./slices/RectangularImageGallery.vue");
+const CaseStudySlice = () => import("./slices/CaseStudySlice.vue");
+const ProfileSlice = () => import("./slices/ProfileSlice.vue");
+const BlankSpace = () => import("./slices/BlankSpace.vue");
+const ArrowSlice = () => import("./slices/ArrowSlice.vue");
+const IconArea = () => import("./slices/IconArea.vue");
 
 export default {
   props: ['slices'],
@@ -158,8 +196,15 @@ export default {
     SlideshowSlice,
     DescSlice,
     ImageSlice,
-    ApproachSlice
-    
+    CaseSlice,
+    CareerSlice,
+    SquareImageGallery,
+    RectangularImageGallery,
+    CaseStudySlice,
+    ProfileSlice,
+    BlankSpace,
+    ArrowSlice,
+    IconArea
   },
 }
 </script>

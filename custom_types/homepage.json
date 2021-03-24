@@ -568,62 +568,109 @@
             },
             "repeat" : { }
           },
-          "description_slice" : {
-            "type" : "Slice",
-            "fieldset" : "Description Slice",
-            "description" : "Description  Slice",
-            "icon" : "star",
-            "non-repeat" : {
-              "text": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading6, strong",
-                  "label": "Text",
-                  "placeholder": "text"
+          "description_slice": {
+            "type": "Slice",
+            "fieldset": "Description Slice",
+            "description": "Description  Slice",
+            "icon": "star",
+            "non-repeat": {
+                "band_name": {
+                    "type": "StructuredText",
+                    "config": {
+                        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                        "label": "Band name / key word",
+                        "placeholder": "Band name / key word"
+                    }
+                },
+                "band_name_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Band name color"
+                    }
+                },
+                "title": {
+                    "type": "StructuredText",
+                    "config": {
+                        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                        "label": "Title",
+                        "placeholder": "Title"
+                    }
+                },
+                "title_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Title color"
+                    }
+                },
+                "description_body": {
+                    "type": "StructuredText",
+                    "config": {
+                        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                        "allowTargetBlank": true,
+                        "label": "Description / body",
+                        "placeholder": "Description / body"
+                    }
+                },
+                "description_body_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Description color"
+                    }
+                },
+                "link": {
+                    "type": "Link",
+                    "config": {
+                        "label": "Featured link",
+                        "placeholder": "Optional Link"
+                    }
+                },
+                "link_label": {
+                    "type": "StructuredText",
+                    "config": {
+                        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                        "label": "Featured link label",
+                        "placeholder": "Optional Link Label"
+                    }
+                },
+                "link_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link color"
+                    }
+                },
+                "link_hover_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link hover color"
+                    }
+                },
+                "link_background_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link background color"
+                    }
+                },
+                "link_background_hover_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link background hover color"
+                    }
+                },
+                "link_border_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link border color"
+                    }
+                },
+                "link_border_hover_color": {
+                    "type": "Color",
+                    "config": {
+                        "label": "Link border hover color"
+                    }
                 }
-              },
-              "testing": {
-                "type": "StructuredText",
-                "config": {
-                  "multi": "paragraph, heading6, strong",
-                  "label": "Text",
-                  "placeholder": "text"
-                }
-              },
-              "title" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "heading2",
-                  "label" : "Image Title",
-                  "placeholder" : "Featured Title..."
-                }
-              },
-              "headline" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "heading3",
-                  "label" : "Image Headline",
-                  "placeholder" : "Featured Headline..."
-                }
-              },
-              "link" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "Featured Link",
-                  "placeholder" : "Optional Link"
-                }
-              },
-              "link_label" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "single" : "paragraph",
-                  "label" : "Featured Link Label",
-                  "placeholder" : "Optional Link Label"
-                }
-              }
             },
-            "repeat" : { }
-          },
+            "repeat": {}
+        },
           "description_link" : {
             "type" : "Slice",
             "fieldset" : "Description Link",

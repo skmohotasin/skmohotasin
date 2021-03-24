@@ -5,9 +5,11 @@
       <div v-for="item in slice.items" :key="item.id" class="gallery-item">
         <prismic-image :field="item.image"/>
         <prismic-rich-text :field="item.image_description"/>
-        <p>
-          <prismic-link :field="item.link" class="gallery-link">{{ $prismic.richTextAsPlain(item.link_label) }}</prismic-link>
-        </p>
+        <template v-if="$prismic.richTextAsPlain(slice.primary.link_label) !== ''">
+          <p>
+            <prismic-link :field="item.link" class="gallery-link">{{ $prismic.richTextAsPlain(item.link_label) }}</prismic-link>
+          </p>
+        </template>
       </div>
     </div>
   </section>

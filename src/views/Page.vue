@@ -31,11 +31,34 @@ export default {
     return {
       documentId: '',
        fields: {
+        Band_name:null,
+        band_name_color:null,
         title: null,
+        title_color:null,
+        subtitle:null,
+        subtitle_color:null,
+        description:null,
+        description_color:null,
+        description_body:null,
+        description_body_color:null,
+        link:null,
+        link_label:null,
+        link_color:null,
+        link_hover_color:null,
+        link_background_color:null,
+        link_background_hover_color:null,
+        link_border_color:null,
+        link_border_hover_color:null,
         tagline: null,
         image: null,
+        main_image: null,
+        image_title: null,
+        image_description: null,
+        label: null,
+        color_set: null,
+        color_set_hover: null,
         button_link: null,
-        button_label: null
+        button_label: null,
       },
       slices: []
     }
@@ -47,7 +70,7 @@ export default {
         .then((document) => {
           
           if (document) {
-            
+            this.documentId = document.id
             //Set slices as variable
             this.slices = document.data.page_content
           } 

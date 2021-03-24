@@ -1,6 +1,6 @@
 <template>
 <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
-    <div class="col-xl-8 col-lg-10 col-md-10 mx-auto text-center">
+    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
       <div class="row">
         <div class="position-relative col-lg-4 col-lg-4 col-md-4 col-sm-6 col-xs-12 p-0">
           <img src="http://placehold.it/423x423" class="img-responsive">
