@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div class="main-footer">
     <div class="mt-5 pt-5 footer">
@@ -102,3 +103,6 @@ export default {
   margin-top: -3px;
 }
 </style>
+=======
+
+>>>>>>> 11d0768ec385f0d21e1fd17821765a6c7180ad82
