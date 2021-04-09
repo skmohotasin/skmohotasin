@@ -1,6 +1,6 @@
 <template>
     <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
-      <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+      <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 mx-auto text-center">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 py-2 py-md-0 mx-auto text-center">
             <prismic-image :field="slice.primary.featured_image" class="img-responsive"/>

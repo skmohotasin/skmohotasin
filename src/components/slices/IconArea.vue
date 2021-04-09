@@ -1,16 +1,16 @@
 <template>
   <div class="row">
-      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto py-5 fm-bg-purple text-center">
+      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto py-5 mt-5 fm-bg-purple text-center">
           <div class="row">
                <template v-if="$prismic.richTextAsPlain(slice.primary.title) !== ''">
-                    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+                    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mt-lg-5 mx-auto text-center">
                         <prismic-rich-text class="title-custom-color mb-3 mb-md-4" :field="slice.primary.title"/>
                     </div>
                 </template>
                 <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
                     <div class="row">
                             <template v-for="(item) in slice.items">
-                                <div :key="item.id" :class="'col-xl-' + (12/slice.items.length) + ' col-lg-' + (12/slice.items.length) + ' col-md-4 col-xs-12 mb-4 mb-md-0 mx-auto p-2 text-center'">
+                                <div :key="item.id" :class="'col-xl-' + (12/slice.items.length) + ' col-lg-' + (12/slice.items.length) + ' col-md-4 col-xs-12 mb-4 mb-md-0 mx-auto p-4 text-center'">
                                     <div class="px-5 py-4 mx-lg-5">
                                         <prismic-image :field="item.image" class="img-responsive"/>
                                     </div>
@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <template v-if="$prismic.richTextAsPlain(slice.primary.description) !== ''">
-                    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
-                        <prismic-rich-text class="description mb-3 mb-md-4 mt-lg-4" :field="slice.primary.description"/>
+                    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mb-md-5 mx-auto text-center">
+                        <prismic-rich-text class="description mb-3 mb-lg-5 mt-lg-4" :field="slice.primary.description"/>
                         <template v-if="$prismic.richTextAsPlain(slice.primary.label) !== ''">
                             <p class="pt-2 pt-md-3">
                                 <prismic-link  class="'btn btn-circle" :field="slice.primary.link">{{ $prismic.richTextAsPlain(slice.primary.label) }}</prismic-link>
