@@ -33,5 +33,12 @@ export default {
   width: 48%;
   float: right;
 }
-
+/* Media Queries */
+@media (max-width: 320px) {
+  .highlight-left,
+  .highlight-right {
+    width: 70%;
+    float: none;
+  }
+}
 </style>

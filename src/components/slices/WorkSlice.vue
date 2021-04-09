@@ -43,7 +43,136 @@ export default {
 .custom-color{
   color:#5b146f;
 }
+<<<<<<< HEAD
 .heading-custom-color{
   color: #ff009c;
 }
 </style>
+=======
+.work_button {
+  background:white;
+  border-radius: 50px;
+  border:2px solid purple;
+  color: purple;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 40px;
+}
+.work_button:hover {
+  background: #c8c9cb;
+}
+
+.title{
+  padding-top:0px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 320px) 
+and (max-device-width: 480px){
+
+  .container {
+        display:reverse;
+        text-align: left;
+        flex-wrap: wrap;
+        
+        
+  }
+  .highlight-right {
+    width: 300px;
+  align-items: left;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+    
+  }
+.highlight-left{
+  width: 200px;
+  align-items: left;
+  padding-bottom: 0px;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+
+  .text{
+    
+    text-align: left;
+    font-size: 14pt;
+  }
+  .testing{
+    
+    text-align: left;
+    font-size: 20pt;
+  }
+
+  .work_button{
+
+    font-size: 10px;
+  }
+  .desc3{
+    line-height: 0em;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+   
+ {
+
+   .container {
+        display:reverse;
+        text-align: left;
+        flex-wrap: wrap;
+        
+        
+  }
+  .highlight-right {
+    float: none;
+    text-align:left;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    
+  }
+.highlight-left{
+  width: 200px;
+  align-items: left;
+  padding-bottom: 0px;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+
+  .text{
+    
+    text-align: center;
+  }
+  .testing{
+    
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  .work_button{
+
+    font-size: 15px;
+  }
+  .h3{
+    font-size: 50px;
+  }
+
+ }
+
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px){
+
+     .testing{
+    
+    text-align: left;
+    font-size: 50px;
+  }
+
+  }
+</style>
+>>>>>>> parent of 67e0d02 (mobile updates)

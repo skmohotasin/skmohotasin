@@ -11,4 +11,29 @@ export default {
   props: ['slice'],
   name: 'brand-outlet'
 }
+<<<<<<< HEAD
 </script>
+=======
+</script>
+
+<style scoped>
+.BOimage {
+  width: 100%;
+  padding-top:20px;
+  
+  
+}
+
+
+/* Media Queries */
+@media (max-width: 320px) {
+  .BOimage {
+    padding-block-start: 50px;
+    
+    align-content: center;
+    width: 100%;
+
+  }
+}
+</style>
+>>>>>>> parent of 67e0d02 (mobile updates)

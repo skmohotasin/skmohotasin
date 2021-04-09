@@ -25,4 +25,16 @@ export default {
 .blockquote-custom-color{
   color: #ff009c;
 }
+<<<<<<< HEAD
+=======
+.quote blockquote:after {
+  content: close-quote;
+}
+/* Media Queries */
+@media (max-width: 320px) {
+  .quote {
+    font-size: 20px;
+  }
+}
+>>>>>>> parent of 67e0d02 (mobile updates)
 </style>

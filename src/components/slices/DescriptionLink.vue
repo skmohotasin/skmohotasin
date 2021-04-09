@@ -33,4 +33,17 @@ export default {
 .heading-custom-color{
   color: #ff009c;
 }
+<<<<<<< HEAD
+=======
+
+
+/* Media Queries */
+@media (max-width: 320px) {
+  .highlight-left,
+  .highlight-right {
+    width: 100%;
+    float: none;
+  }
+}
+>>>>>>> parent of 67e0d02 (mobile updates)
 </style>

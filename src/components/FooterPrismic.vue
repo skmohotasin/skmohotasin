@@ -122,4 +122,120 @@ export default {
 .btn-circle svg {
   margin-top: -3px;
 }
+<<<<<<< HEAD
+=======
+
+.highlight-center {
+    padding-right:200px;
+    padding-left:80px;
+    text-align:left;
+    
+}
+
+.highlight-left {
+  padding-right:70px;
+  padding-left:0px;
+}
+
+.text{
+  color:rgb(219, 59, 86);
+  font-size: 12pt;
+}
+
+.text em{
+  color:white;
+  font-size: 10pt;
+}
+.description{
+  text-align: left;
+}
+.desc{
+  color:white;
+  font-weight: normal;
+}
+
+p{
+  margin-bottom: 1em;
+}
+.copyright{
+  color:white;
+  background-color: #5b146f;
+  font-size: 6pt;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+
+.footer {
+  max-width: 5000px;
+  text-align: center;
+  border-top: 1px solid #DADADA;
+  color:#ffffff;
+}
+
+.container {
+display:flex;
+background:#5b146f;
+max-width: 5000px;
+padding-top:50px;
+}
+
+.highlight-center {
+    padding-right:200px;
+    padding-left:80px;
+    text-align:left;
+}
+
+.text{
+  color:rgb(219, 59, 86);
+  font-size: 10pt;
+  text-align: center;
+}
+
+.text em{
+  color:white;
+  font-size: 10pt;
+}
+
+.desc{
+  color:white;
+  font-weight: normal;
+  font-size:16pt;
+  padding-left: 15pt;
+  
+  text-align: left;
+}
+
+p{
+  margin-bottom: 1em;
+}
+
+    .container{
+      display: block;
+    }
+    .description{
+      text-align: center;
+    }
+    .highlight-left{
+      padding-bottom: 15px;
+    }
+    .highlight-center{
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .logoo{
+    width: 20px;
+    height: 35px;
+    }
+    .copyright{
+      padding-top: 0px;
+    }
+  
+    
+  }
+
+>>>>>>> parent of 67e0d02 (mobile updates)
 </style>
