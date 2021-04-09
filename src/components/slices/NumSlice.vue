@@ -1,18 +1,23 @@
 <template>
- <div class="row py-3 py-md-3 py-lg-5 my-4 my-md-0 custom-bg-color">
-    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+ <div class="row py-4 py-md-3 py-lg-5 mt-4 mt-sm-5 mb-4 mb-md-3 custom-bg-color">
+    <template  v-if="$prismic.richTextAsPlain(slice.primary.number_slice_title) !== ''">
+      <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 mx-auto text-center">
+        <prismic-rich-text :field="slice.primary.number_slice_title" :class="'pb-3 pb-lg-5 text-white'"/>
+      </div>
+    </template>
+    <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 mx-auto text-center">
       <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-             <div class="counter1"></div>
-            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text1"/>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-            <div class="counter2"></div>
-            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text5"/>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-            <div class="counter3"></div>
-            <prismic-rich-text class="text-white pt-2" :field="slice.primary.text11"/>
+          <div v-for="item in slice.items" :key="item.id" class="col-xl-4 col-lg-4 col-md-4 text-center">
+             <div class="number">
+               <number
+                :from="0"
+                :to="item.number"
+                :format="theFormat"
+                :duration="15"
+                :delay="1"
+                 easing="Power0.easeNone"/>
+             </div>
+             <P class="text-white pt-2">{{ item.title }}</p>
           </div>
       </div>
     </div>
@@ -22,7 +27,12 @@
 <script>
 export default {
   props: ['slice'],
-  name: 'number-slice'
+  name: 'num-slice',
+   methods: {
+        theFormat(number) {
+            return number.toLocaleString("en", {minimumFractionDigits: 0,maximumFractionDigits: 0,});
+        }
+    }
 }
 </script>
 
@@ -30,106 +40,16 @@ export default {
 .custom-bg-color {
   background:#5b146f;
 }
-.counter1, .counter2, .counter3 {
+.number span {
   font: 700 50px system-ui;
+  padding: 0rem;
+  color:#ffffff;
 }
 @media (min-width: 1200px) { 
-  .counter1, .counter2, .counter3 {
+  .number span {
     font: 700 70px system-ui;
   }
  }
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-.counter1 {
--webkit-animation: counterone 10s ;
--moz-animation: counterone 10s ;
--ms-animation: counterone 10s ;
-animation: counterone 10s ;
-  /*animation: counterone 10s ;*/
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  counter-reset: num var(--num);
-  padding: 0rem;
-  color:#ffffff;
-}
-
-@-webkit-keyframes counterone {
-  from {
-    --num: 0;
-  }
-  to {
-    -webkit--num: 1000;
-  }
-}
-
-@-moz-keyframes counterone {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 1000;
-  }
-}
-
-@keyframes counterone {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 130000;
-  }
-}
-
-.counter1::after {
-  content: counter(num);
-}
-
-.counter2 {
-  animation: counterthree 10s ;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  counter-reset: num var(--num);
-  padding: 0rem;
-  color:#ffffff;
-}
-
-@keyframes counterthree {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 374000;
-  }
-}
-
-.counter2::after {
-  content: counter(num);
-}
-
-.counter3 {
-  animation: counterfive 10s ;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  counter-reset: num var(--num);
-  padding: 0rem;
-  color:#ffffff;
-}
-
-@keyframes counterfive {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 500000;
-  }
-}
-
-.counter3::after {
-  content: counter(num);
-}
 </style>
 
 

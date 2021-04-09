@@ -123,4 +123,3 @@ export default {
   margin-top: -3px;
 }
 </style>
-

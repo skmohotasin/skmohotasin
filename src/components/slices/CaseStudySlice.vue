@@ -1,6 +1,6 @@
 <template>
 <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
-    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
+    <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 mx-auto text-center">
         <prismic-rich-text class="heading-custom-color pb-md-2 mb-3 mb-md-4" :field="slice.primary.band_name"/>
         <prismic-rich-text class="title-custom-color mb-4 mb-md-5"  :field="slice.primary.title"/>
         <prismic-rich-text class="subtitle-custom-color mb-3 mb-md-4"  :field="slice.primary.subtitle"/>

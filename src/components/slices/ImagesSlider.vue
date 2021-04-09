@@ -1,7 +1,7 @@
 <template>
    <div class="row">
     <template v-if="$prismic.richTextAsPlain(slice.primary.title) !== ''">
-      <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center fm-bg-purple py-3 py-md-4">
+      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto text-center fm-bg-purple py-3 py-md-4">
           <prismic-rich-text class="text-white mb-3 mb-md-4" :field="slice.primary.eyebrow_headline"/>
         <template v-if="$prismic.richTextAsPlain(slice.primary.title) !== ''">
           <prismic-rich-text :class="'text-white mb-3 mb-md-4'"  :field="slice.primary.title"/>
@@ -11,7 +11,7 @@
         </template>
       </div>
     </template>
-    <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto p-0">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto p-0">
       <div id="ImageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
         <div class="custom-carousel-indicators d-none d-md-block">
             <template v-for="(item,index) in slice.items">

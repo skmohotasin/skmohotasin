@@ -30,6 +30,7 @@ h1,
 .h2,
 h2 {
     font-size: calc(1.15rem + 1.5vw);
+    font-weight: 800;
 }
 
 .h3,
@@ -87,6 +88,18 @@ em,
 header,
 footer {
     font-family: 'Poppins', sans-serif;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.letter-spacing-1-8 {
+    letter-spacing: 1.8px;
 }
 
 

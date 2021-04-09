@@ -1,6 +1,6 @@
 <template>
   <div class="row py-2 py-sm-2 py-md-3 py-lg-5">
-      <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 col-sm-12 mx-auto text-center">
+      <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-12 mx-auto text-center">
         <form method="post">
           <div class="row">
             <div class="col-md-6">
@@ -19,7 +19,7 @@
                     <textarea name="userMsg" class="form-control" placeholder="MESSAGE" style="width: 100%; height: 150px;"></textarea>
                 </div>
                 <div class="mt-3">
-                    <input type="file" class="form-control" value="Browse" name="avatar" id="cvFile" />
+                    <input type="file" class="form-control" value="Browse" name="file" id="cvFile" />
                 </div>
                  <div class="mt-3">
                     <input type="submit" name="Submit" class="btn btn-circle" value="Submit">

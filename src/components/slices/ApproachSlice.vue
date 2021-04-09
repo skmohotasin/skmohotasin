@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-      <div class="col-xxl-8 col-xl-12 col-lg-12 col-md-12 mx-auto text-center gallery">
+      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto text-center gallery">
         <div class="row">
           <template v-if="$prismic.richTextAsPlain(slice.primary.gallery_title) !== ''">
             <div class="col-xl-12 col-lg-12 col-md-12 mx-auto text-center">
