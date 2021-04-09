@@ -69,47 +69,5 @@ export default {
 
 
 
-/* Media Queries */
-@media (max-width: 320px) {
 
-  .container {
-        display:reverse;
-        text-align: left;
-        flex-wrap: wrap;
-        
-        
-  }
-  .highlight-right {
-    float: none;
-    text-align:left;
-    margin-bottom: 0px;
-    margin-inline-end: 0px;
-    
-  }
-.highlight-left{
-  width: 200px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 70px;
-  padding-right: 50px;
-}
-
-  .text{
-    
-    text-align: center;
-  }
-  .testing{
-    
-    text-align: center;
-    font-size: 15pt;
-  }
-
-  .work_button{
-
-    font-size: 10px;
-  }
-
-  
-  
-}
 </style>

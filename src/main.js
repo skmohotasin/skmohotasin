@@ -6,9 +6,6 @@ import App from './App.vue'
 import router from './router'
 import VueSplide from '@splidejs/vue-splide'
 import bootstrap from 'bootstrap'
-import VueNumber from 'vue-number-animation'
-
-Vue.use(VueNumber)
 
 Vue.config.productionTip = false
 

@@ -106,29 +106,31 @@ export default {
   background: transparent;
 }
 
-
 .homepage-banner {
-    background: linear-gradient(115deg, #2a5ba8, #b70f76);
-    background-size: 175% 100%;
-
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
+    background:linear-gradient(to top left, #ff009c,#5b146f,#00a9ff,#ffd515);
+    max-width: 5000px;
+    margin: auto;
+    max-height: 2000px;
+    background-size:cover;
+    background-blend-mode: hard-light;
+    animation: hue-rotate alternate-reverse 10s infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+    opacity: 0.7;
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    opacity: 0.9;
+  }
 }
 </style>

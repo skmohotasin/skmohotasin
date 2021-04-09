@@ -33,58 +33,7 @@ export default {
 .custom-color{
   color:#5b146f;
 }
-<<<<<<< HEAD
 .heading-custom-color{
   color: #ff009c;
 }
-=======
-/* Media Queries */
-@media (max-width: 320px) {
- 
-.text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  
-}
-
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-.button{
-  
-  align-content: right;
-}
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)
-   
- {
-   .text{
- 
-  text-align: center;
-  padding-bottom: 0px;
-  
-}
-
-.testing{
-  padding-top: 0px;
-  font-size: 25pt;
-  text-align: center;
-  
-}
-.button{
-  
-  align-content: right;
-}
- }
-
- 
-
->>>>>>> parent of 67e0d02 (mobile updates)
 </style>

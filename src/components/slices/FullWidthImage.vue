@@ -35,7 +35,6 @@ export default {
 }
 </script>
 <style scoped>
-<<<<<<< HEAD
 .gallery-item {
   position: relative;
 }
@@ -59,21 +58,6 @@ export default {
     right: 50%;
     text-align: left;
   }
-=======
-
-
-@media (max-width: 320px) 
-and (max-device-width: 480px)
-  {
-
-.image{
-  width: 320px;
-  align-items: left;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
->>>>>>> parent of 67e0d02 (mobile updates)
 }
 .gallery-item-text-area:before {
     content: '';

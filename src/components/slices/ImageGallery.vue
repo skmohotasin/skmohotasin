@@ -83,7 +83,6 @@ export default {
     min-height: 259px;
   }
 }
-<<<<<<< HEAD
 @media (min-width: 1600px) {
   .width-detect img {
     min-height: 296px;
@@ -137,19 +136,3 @@ export default {
   background: #5b146f;
 }
 </style>
-=======
-/* Media Queries */
-@media (max-width: 320px) {
-  .gallery-item {
-    
-    -webkit-box-flex:auto;
-    -moz-box-flex:  auto;
-    -webkit-flex:  auto;
-    -ms-flex:  auto;
-    flex: auto;
-    
-    
-  }
-}
-</style>
->>>>>>> parent of 67e0d02 (mobile updates)
