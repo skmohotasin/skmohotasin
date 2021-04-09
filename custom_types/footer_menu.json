@@ -1,0 +1,96 @@
+{
+    "Main": {
+        "title": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Title",
+                "placeholder": "Title"
+            }
+        },
+        "title_split": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Title split",
+                "placeholder": "Title split"
+            }
+        },
+        "subtitle": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "SubTitle",
+                "placeholder": "SubTitle"
+            }
+        },
+        "description": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Description"
+            }
+        },
+        "link_list": {
+            "type": "Group",
+            "config": {
+                "fields": {
+                    "link_title": {
+                        "type": "Text",
+                        "config": {
+                            "label": "Link Title"
+                        }
+                    },
+                    "url": {
+                        "type": "Link",
+                        "config": {
+                            "select": "document",
+                            "customtypes": [
+                                "page",
+                                "homepage"
+                            ],
+                            "label": "Url",
+                            "placeholder": "Url"
+                        }
+                    }
+                },
+                "label": "Link List"
+            }
+        },
+        "contact_list": {
+            "type": "Group",
+            "config": {
+                "fields": {
+                    "label": {
+                        "type": "Text",
+                        "config": {
+                            "label": "Label"
+                        }
+                    },
+                    "title1": {
+                        "type": "Text",
+                        "config": {
+                            "label": "Title",
+                            "placeholder": "Title"
+                        }
+                    },
+                    "url": {
+                        "type": "Link",
+                        "config": {
+                            "label": "Url",
+                            "placeholder": "Url"
+                        }
+                    }
+                },
+                "label": "Contact List"
+            }
+        },
+        "copyright": {
+            "type": "Text",
+            "config": {
+                "label": "copyright",
+                "placeholder": "copyright"
+            }
+        }
+    }
+}
