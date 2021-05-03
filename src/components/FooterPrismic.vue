@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <footer class="main-footer">
     <div class="mt-5 pt-5 footer">
@@ -68,58 +69,6 @@
     </div>
   </footer>
 </template>
+=======
+>>>>>>> a52e186722f7d7661656d5a515f3a573e8678412
 
-<script>
-export default {
-  name: 'FooterPrismic',
-  data () {
-    return {
-      menuContent: [],
-      menuLinks: [],
-      contactLinks: [],
-      contactTitle:[],
-      contactTitleSplit:[],
-      contactSubtitle:[],
-      contactDes:[],
-      contactCopyright:[]
-    }
-  },
-  methods: {
-    getMenu () {
-      //Query to get menu content
-      this.$prismic.client.getSingle('footer_menu')
-        .then((menuContent) => {
-          this.menuContent = menuContent
-          this.menuLinks = menuContent.data.link_list
-          this.contactLinks = menuContent.data.contact_list
-          this.contactTitle = menuContent.data.title
-          this.contactTitleSplit = menuContent.data.title_split
-          this.contactSubtitle = menuContent.data.subtitle
-          this.contactDes = menuContent.data.description
-          this.contactCopyright = menuContent.data.copyright
-        })
-    },
-  },
-  created () {
-    this.getMenu()
-  }
-}
-</script>
-
-<style scoped> 
-.main-footer {background: #5b146f;}
-.street-address p {font-size:14px;}
-.copyright {font-size: 10px;}
-.btn-circle {
-  background-color: #e10098;
-  width: 40px;
-  height: 40px;
-  padding: 12px 12px;
-  border-radius: 50px;
-  font-size: 14px;
-  line-height: 40px;
-}
-.btn-circle svg {
-  margin-top: -3px;
-}
-</style>
