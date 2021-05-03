@@ -58,7 +58,7 @@ p {
 }
 
 p.small {
-    font-size: calc(0.95rem + 0.1vw);
+    font-size: calc(0.8rem + 0.2vw);
 }
 
 p.v-small {
@@ -178,4 +178,20 @@ svg {
 
 .n-mb-5 {
     margin-bottom: -3rem;
+}
+
+@media (max-width: 420px) {
+    .small p {
+        font-size: calc(0.8rem + 0.2vw);
+    }
+}
+
+.carousel-caption .small>p>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-caption .small>p>a:hover {
+    color: #e10098;
+    text-decoration: none;
 }

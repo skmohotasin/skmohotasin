@@ -63,7 +63,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title"
                                 }
                             }
@@ -79,7 +79,7 @@
                             "quote_text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Quote Text",
                                     "placeholder": "Quote Text"
                                 }
@@ -87,7 +87,7 @@
                             "author": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "author",
                                     "placeholder": "Author"
                                 }
@@ -104,7 +104,7 @@
                             "master_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Master title",
                                     "placeholder": "Master title"
                                 }
@@ -123,7 +123,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -137,7 +137,7 @@
                             "subtitle": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Subtitle",
                                     "placeholder": "Subtitle"
                                 }
@@ -158,7 +158,7 @@
                             "label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Label",
                                     "placeholder": "Label"
                                 }
@@ -176,7 +176,16 @@
                                 }
                             }
                         },
-                        "repeat": {}
+                        "repeat": {
+                            "mobile_images": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Mobile images"
+                                }
+                            }
+                        }
                     },
                     "rectangular_image_gallery": {
                         "type": "Slice",
@@ -188,7 +197,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -212,7 +221,7 @@
                             "image_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image title",
                                     "placeholder": "Image title"
                                 }
@@ -220,7 +229,7 @@
                             "image_description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image description",
                                     "placeholder": "Image description"
                                 }
@@ -235,7 +244,7 @@
                             "label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Label",
                                     "placeholder": "Label"
                                 }
@@ -376,7 +385,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -384,7 +393,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -443,7 +452,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -451,7 +460,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Testing",
                                     "placeholder": "Title"
                                 }
@@ -499,7 +508,7 @@
                             "band_name": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Band name / key word",
                                     "placeholder": "Band name / key word"
                                 }
@@ -513,7 +522,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -527,7 +536,7 @@
                             "description_body": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "allowTargetBlank": true,
                                     "label": "Description / body",
                                     "placeholder": "Description / body"
@@ -549,7 +558,7 @@
                             "link_label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Featured link label",
                                     "placeholder": "Optional Link Label"
                                 }
@@ -618,7 +627,7 @@
                             "eyebrow_headline": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "allowTargetBlank": true,
                                     "label": "Eyebrow headline"
                                 }
@@ -626,7 +635,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -634,7 +643,7 @@
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "allowTargetBlank": true,
                                     "label": "Description"
                                 }
@@ -655,7 +664,7 @@
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
                                     "allowTargetBlank": true,
                                     "label": "Description"
                                 }
@@ -686,7 +695,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -694,7 +703,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -727,7 +736,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -755,7 +764,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -763,7 +772,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Testing",
                                     "placeholder": "Title"
                                 }
@@ -811,7 +820,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -819,7 +828,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -867,7 +876,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading2,heading3,heading4,heading5,heading6",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -908,7 +917,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -935,7 +944,7 @@
                             "image_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image title",
                                     "placeholder": "Image title"
                                 }
@@ -943,7 +952,7 @@
                             "image_description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image description",
                                     "placeholder": "Image description"
                                 }
@@ -958,7 +967,7 @@
                             "label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Label",
                                     "placeholder": "Label"
                                 }
@@ -986,7 +995,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -994,7 +1003,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -1002,7 +1011,7 @@
                             "testing1": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -1050,7 +1059,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -1090,7 +1099,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -1139,7 +1148,7 @@
                             "band_name": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Band name / key word",
                                     "placeholder": "Band name / key word"
                                 }
@@ -1153,7 +1162,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -1167,7 +1176,7 @@
                             "subtitle": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Subtitle",
                                     "placeholder": "Subtitle"
                                 }
@@ -1181,7 +1190,7 @@
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Description / body",
                                     "placeholder": "Description / body"
                                 }
@@ -1202,7 +1211,7 @@
                             "link_label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Featured link label",
                                     "placeholder": "Featured link label"
                                 }
@@ -1273,14 +1282,14 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title"
                                 }
                             },
                             "paragraph": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
                                     "label": "Paragraph"
                                 }
                             },
@@ -1310,7 +1319,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "title",
                                     "placeholder": "Title"
                                 }
@@ -1334,7 +1343,7 @@
                             "image_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image title",
                                     "placeholder": "Image title"
                                 }
@@ -1342,7 +1351,7 @@
                             "image_description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Image description",
                                     "placeholder": "Image description"
                                 }
@@ -1357,7 +1366,7 @@
                             "label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Label",
                                     "placeholder": "Label"
                                 }
@@ -1426,7 +1435,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -1440,7 +1449,7 @@
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Description",
                                     "placeholder": "Description"
                                 }
@@ -1455,7 +1464,7 @@
                             "label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Label",
                                     "placeholder": "Label"
                                 }
@@ -1491,7 +1500,7 @@
                             "details": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Details",
                                     "placeholder": "Details"
                                 }

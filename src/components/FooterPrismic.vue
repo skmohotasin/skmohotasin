@@ -1,5 +1,5 @@
 <template>
-  <div class="main-footer">
+  <footer class="main-footer">
     <div class="mt-5 pt-5 footer">
       <div class="container-fluid">
         <div class="row">
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

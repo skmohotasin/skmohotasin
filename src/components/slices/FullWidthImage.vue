@@ -8,7 +8,10 @@
     </template>
     <div class="position-relative col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 m-0 p-0 mx-auto text-center">
       <div class="gallery-item-inner">
-        <prismic-image :field="slice.primary.image"  class="img-responsive"/>
+            <prismic-image :field="slice.primary.image" class="img-responsive d-none d-md-inline-flex" />
+          <template v-for="item in slice.items">
+            <prismic-image :field="item.mobile_images" :key="item.id" class="img-responsive d-md-none col-sm-12"/>
+          </template>
         <template v-if="$prismic.richTextAsPlain(slice.primary.title) !== ''">
           <div class="gallery-item-text-area">
             <div class="gallery-item-desciption d-inline-block align-middle p-4 px-lg-5 m-0">
@@ -48,7 +51,6 @@ export default {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
-  position: absolute;
   text-align: center;
   background: transparent;
   margin: auto;
@@ -57,6 +59,12 @@ export default {
   .gallery-item-text-area {
     right: 50%;
     text-align: left;
+    position: absolute;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-item-text-area {
+    position: relative;
   }
 }
 .gallery-item-text-area:before {

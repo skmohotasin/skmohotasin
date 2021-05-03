@@ -13,10 +13,10 @@
     </template>
     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto p-0">
       <div id="ImageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
-        <div class="custom-carousel-indicators d-none d-md-block">
+        <div class="carousel-indicators d-none d-md-block">
             <template v-for="(item,index) in slice.items">
               <template v-if="index == 0">
-                <button :key="item.id" type="button" data-bs-target="#ImageSlider" :data-bs-slide-to="index" class="active" aria-current="true" :aria-label="'Slide ' + (index + 1)">{{ item.year }}</button>
+                <button :key="item.id" type="button" data-bs-target="#ImageSlider" :data-bs-slide-to="index" :aria-label="'Slide ' + (index + 1)" class="active" aria-current="true">{{ item.year }}</button>
               </template>
               <template v-else>
                 <button :key="item.id" type="button" data-bs-target="#ImageSlider" :data-bs-slide-to="index" :aria-label="'Slide ' + (index + 1)">{{ item.year }}</button>
@@ -28,13 +28,13 @@
             <div v-if="index == 0" :key="item.id" :class="'carousel-item active'">
               <prismic-image :field="item.image" class="d-block w-100"/>
               <div class="carousel-caption">
-                <prismic-rich-text :field="item.description"/>
+                <prismic-rich-text class="small" :field="item.description"/>
               </div>
             </div>
             <div v-else :key="item.id" :class="'carousel-item'">
               <prismic-image :field="item.image" class="d-block w-100"/>
               <div class="carousel-caption">
-                <prismic-rich-text :field="item.description"/>
+                <prismic-rich-text class="small" :field="item.description"/>
               </div>
             </div>
           </template>
@@ -53,7 +53,7 @@ export default {
 
 
 <style scoped>
-.custom-carousel-indicators {
+.carousel-indicators {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -71,7 +71,7 @@ export default {
   margin-left: 0;
   margin-right: 0;
 }
-.custom-carousel-indicators [data-bs-target] {
+.carousel-indicators [data-bs-target] {
   padding: 0;
   text-indent: 0;
   border: none;
@@ -81,7 +81,7 @@ export default {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.custom-carousel-indicators [data-bs-target].active, .custom-carousel-indicators [data-bs-target]:hover {
+.carousel-indicators [data-bs-target].active, .carousel-indicators [data-bs-target]:hover {
   color: #e10098;
   padding: 0 3px;
   font-weight: bold;
@@ -110,6 +110,10 @@ export default {
     color: #fff;
     text-align: left;
   }
+}
+.carousel-caption .small>p>a {
+    color: rgb(190, 34, 42);
+    text-decoration: none;
 }
 </style>
 

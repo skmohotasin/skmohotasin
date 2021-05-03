@@ -11,6 +11,7 @@
          </div>
       <!-- Slices block component -->
       <slices-block :slices="slices"/>
+    <footer-prismic/>
   </section>
 </template>
 
@@ -18,14 +19,14 @@
 // imports for all components
 import HeaderPrismic from '../components/HeaderPrismic.vue'
 import SlicesBlock from '../components/SlicesBlock.vue'
-
-
+import FooterPrismic from '../components/FooterPrismic.vue'
 
 export default {
   name: 'page',
   components: {
     HeaderPrismic,
-    SlicesBlock
+    SlicesBlock,
+    FooterPrismic
   },
   data () {
     return {
