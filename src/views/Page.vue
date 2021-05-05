@@ -1,5 +1,5 @@
 <template>
-  <section class="page" :documentId="documentId">
+  <section class="page" :documentId="documentId" v-bind:style="{ backgroundImage: 'url(' + backgroundImage.url + ')'}">
     <!-- Vue tag to add header component -->
     <header-prismic/>
     <!-- Button to edit document in dashboard -->
@@ -10,8 +10,8 @@
             </div>
          </div>
       <!-- Slices block component -->
-      <slices-block :slices="slices"/>
-    <footer-prismic/>
+      <slices-block :slices="slices" />
+    <footer-prismic />
   </section>
 </template>
 
@@ -31,36 +31,7 @@ export default {
   data () {
     return {
       documentId: '',
-       fields: {
-        Band_name:null,
-        band_name_color:null,
-        title: null,
-        title_color:null,
-        subtitle:null,
-        subtitle_color:null,
-        description:null,
-        description_color:null,
-        description_body:null,
-        description_body_color:null,
-        link:null,
-        link_label:null,
-        link_color:null,
-        link_hover_color:null,
-        link_background_color:null,
-        link_background_hover_color:null,
-        link_border_color:null,
-        link_border_hover_color:null,
-        tagline: null,
-        image: null,
-        main_image: null,
-        image_title: null,
-        image_description: null,
-        label: null,
-        color_set: null,
-        color_set_hover: null,
-        button_link: null,
-        button_label: null,
-      },
+      backgroundImage: [],
       slices: []
     }
   },
@@ -72,6 +43,7 @@ export default {
           
           if (document) {
             this.documentId = document.id
+            this.backgroundImage = document.data.background_image
             //Set slices as variable
             this.slices = document.data.page_content
           } 
@@ -93,6 +65,10 @@ export default {
 </script>
 
 <style scoped>
+.page {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .btn-homepage-circle {
   text-decoration: none;
   color: #fff;

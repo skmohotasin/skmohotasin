@@ -48,6 +48,14 @@
                 "repeat": false
             }
         },
+        "background_image": {
+            "type": "Image",
+            "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Background image"
+            }
+        },
         "page_content": {
             "type": "Slices",
             "fieldset": "Slice zone",
