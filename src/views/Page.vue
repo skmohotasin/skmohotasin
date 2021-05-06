@@ -30,6 +30,7 @@ export default {
   },
   data () {
     return {
+      filed:[],
       documentId: '',
       backgroundImage: [],
       slices: []
@@ -40,10 +41,20 @@ export default {
       //Query to get post content
       this.$prismic.client.getByUID('page', uid)
         .then((document) => {
-          
+          const width  = window.innerWidth || document.documentElement.clientWidth || 
+          document.body.clientWidth;
+          const height = window.innerHeight|| document.documentElement.clientHeight|| 
+          document.body.clientHeight;
+
           if (document) {
             this.documentId = document.id
-            this.backgroundImage = document.data.background_image
+             console.log(width, height);
+            if (width < 768) {
+              this.backgroundImage = document.data.background_image_mobile
+            }
+            else {
+              this.backgroundImage = document.data.background_image
+            }
             //Set slices as variable
             this.slices = document.data.page_content
           } 
@@ -65,15 +76,10 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 768px) {
-  .page {
-    background-size: 100vw 95vh;
-  }
-}
-@media (max-width: 767px) {
-  .page {
-    background-size: 100vw 100vh;
-  }
+.page {
+  background-position: center;
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 .btn-homepage-circle {
   text-decoration: none;

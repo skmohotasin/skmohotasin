@@ -30,15 +30,10 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 768px) {
-  .ac-Bg {
-    background-size: 100vw 45vh;
-  }
-}
-@media (max-width: 767px) {
-  .ac-Bg {
-    background-size: 100vw 75vh;
-  }
+.ac-Bg {
+  background-position: center;
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 .btn-color-0 {
   color: #00a9ff;

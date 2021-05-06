@@ -56,6 +56,14 @@
                 "label": "Background image"
             }
         },
+        "background_image_mobile": {
+            "type": "Image",
+            "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Background image mobile"
+            }
+        },
         "page_content": {
             "type": "Slices",
             "fieldset": "Slice zone",

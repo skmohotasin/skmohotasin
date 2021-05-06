@@ -525,6 +525,14 @@
                                     "thumbnails": [],
                                     "label": "Background image"
                                 }
+                            },
+                            "background_image_mobile": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Background image mobile"
+                                }
                             }
                         },
                         "repeat": {}
@@ -693,6 +701,14 @@
                                     "constraint": {},
                                     "thumbnails": [],
                                     "label": "Background image"
+                                }
+                            },
+                            "background_image_mobile": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Background image mobile"
                                 }
                             }
                         },
