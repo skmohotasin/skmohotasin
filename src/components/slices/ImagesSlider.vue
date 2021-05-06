@@ -111,6 +111,21 @@ export default {
     text-align: left;
   }
 }
+@media (min-width: 320px) {
+  .carousel-indicators [data-bs-target] {
+  padding-right: 0;
+  text-indent: 0;
+  border: none;
+  color: #fff;
+  margin-right: 0px;
+  margin-left:0px;
+  background-color: transparent;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.2s ease;
+  font-size: 9px;
+
+}
+}
 .carousel-caption .small>p>a {
     color: rgb(190, 34, 42);
     text-decoration: none;
