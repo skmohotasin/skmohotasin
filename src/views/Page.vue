@@ -65,9 +65,15 @@ export default {
 </script>
 
 <style scoped>
-.page {
-  background-repeat: no-repeat;
-  background-size: contain;
+@media (min-width: 768px) {
+  .page {
+    background-size: 100vw 95vh;
+  }
+}
+@media (max-width: 767px) {
+  .page {
+    background-size: 100vw 100vh;
+  }
 }
 .btn-homepage-circle {
   text-decoration: none;

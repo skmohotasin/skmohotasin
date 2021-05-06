@@ -7,7 +7,7 @@
                     "home_page_title": {
                         "type": "StructuredText",
                         "config": {
-                            "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                             "label": "Home page title",
                             "placeholder": "Home page title"
                         }
@@ -15,7 +15,7 @@
                     "home_page_subtitle": {
                         "type": "StructuredText",
                         "config": {
-                            "single": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                             "label": "Home page subtitle",
                             "placeholder": "Home page subtitle"
                         }
@@ -65,7 +65,7 @@
                             "rich_text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading1, strong",
+                                    "multi": "paragraph,heading1,strong",
                                     "label": "Rich Text",
                                     "placeholder": "Text..."
                                 }
@@ -122,7 +122,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -240,7 +240,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -248,7 +248,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -297,7 +297,7 @@
                             "table_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title",
                                     "placeholder": "Table Title"
                                 }
@@ -307,7 +307,7 @@
                             "col1": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, strong, em",
+                                    "multi": "paragraph,strong,em",
                                     "label": "col1",
                                     "placeholder": "Column 1 content..."
                                 }
@@ -331,7 +331,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -376,7 +376,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -384,7 +384,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Testing",
                                     "placeholder": "Title"
                                 }
@@ -432,7 +432,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -458,7 +458,7 @@
                             "gallery_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "Gallery Title",
                                     "placeholder": "Image Gallery Title..."
                                 }
@@ -517,6 +517,14 @@
                                     "thumbnails": [],
                                     "label": "Image"
                                 }
+                            },
+                            "background_image": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Background image"
+                                }
                             }
                         },
                         "repeat": {}
@@ -530,7 +538,7 @@
                             "band_name": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Band name / key word",
                                     "placeholder": "Band name / key word"
                                 }
@@ -544,7 +552,7 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Title",
                                     "placeholder": "Title"
                                 }
@@ -558,7 +566,7 @@
                             "description_body": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "allowTargetBlank": true,
                                     "label": "Description / body",
                                     "placeholder": "Description / body"
@@ -580,7 +588,7 @@
                             "link_label": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Featured link label",
                                     "placeholder": "Optional Link Label"
                                 }
@@ -633,7 +641,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -641,7 +649,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -674,9 +682,17 @@
                             "app_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading2, heading3",
+                                    "single": "heading2,heading3",
                                     "label": "App Title",
                                     "placeholder": "App Title"
+                                }
+                            },
+                            "background_image": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Background image"
                                 }
                             }
                         },
@@ -684,7 +700,7 @@
                             "block_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Block title",
                                     "placeholder": "Block title"
                                 }
@@ -692,7 +708,7 @@
                             "block_description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Block description",
                                     "placeholder": "Block description"
                                 }
@@ -723,7 +739,7 @@
                             "number_slice_title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Number Slice title",
                                     "placeholder": "Number Slice title"
                                 }
@@ -766,7 +782,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -774,7 +790,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
                                     "label": "Testing",
                                     "placeholder": "Title"
                                 }
@@ -838,7 +854,7 @@
                             "eyebrow_headline": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
                                     "allowTargetBlank": true,
                                     "label": "Eyebrow headline"
                                 }
@@ -846,14 +862,14 @@
                             "title": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
                                     "label": "Title"
                                 }
                             },
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
                                     "allowTargetBlank": true,
                                     "label": "Description"
                                 }
@@ -874,7 +890,7 @@
                             "description": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
                                     "allowTargetBlank": true,
                                     "label": "Description"
                                 }
@@ -901,7 +917,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -918,7 +934,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -935,7 +951,7 @@
                             "text": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
@@ -943,7 +959,7 @@
                             "testing": {
                                 "type": "StructuredText",
                                 "config": {
-                                    "multi": "paragraph, heading6, strong",
+                                    "multi": "paragraph,heading6,strong",
                                     "label": "Text",
                                     "placeholder": "text"
                                 }
