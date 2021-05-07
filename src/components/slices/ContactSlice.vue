@@ -32,7 +32,7 @@
                 </div>
                 <div class="mt-5">
                      <ul class="list-group list-group-flush text-start m-0 p-0">
-                        <li class="list-group-item bg-transparent border-bottom-0 m-0 p-1 fm-pink">Email : <a class="text-decoration-none fm-black" href="mailto:hello@finalmile.io"><em>hello@finalmile.io</em></a></li>
+                        <li class="list-group-item bg-transparent border-bottom-0 m-0 p-1 fm-pink">Email : <a class="text-decoration-none fm-black" href="mailto:hello@finalmile.co.nz"><em>hello@finalmile.co.nz</em></a></li>
                       </ul>
                 </div>
                 <div class="mt-4">
