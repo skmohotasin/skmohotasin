@@ -13,7 +13,7 @@
     </template>
     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto p-0">
       <div id="ImageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="false">
-        <div class="carousel-indicators d-none d-md-block">
+        <div class="carousel-indicators d-md-block">
             <template v-for="(item,index) in slice.items">
               <template v-if="index == 0">
                 <button :key="item.id" type="button" data-bs-target="#ImageSlider" :data-bs-slide-to="index" :aria-label="'Slide ' + (index + 1)" class="active" aria-current="true">{{ item.year }}</button>
@@ -72,7 +72,7 @@ export default {
   margin-right: 0;
 }
 .carousel-indicators [data-bs-target] {
-  padding: 0;
+  padding: 30px;
   text-indent: 0;
   border: none;
   color: #fff;
@@ -80,10 +80,11 @@ export default {
   background-color: transparent;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  font-size: 30px;
 }
 .carousel-indicators [data-bs-target].active, .carousel-indicators [data-bs-target]:hover {
   color: #e10098;
-  padding: 0 3px;
+  padding: 0 6px;
   font-weight: bold;
   background-color: transparent;        
 }
@@ -97,7 +98,9 @@ export default {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: left;
+    
   }
+  
 }
 @media (max-width: 767px) {
   .carousel-caption {
@@ -109,22 +112,19 @@ export default {
     padding-bottom: 0;
     color: #fff;
     text-align: left;
+    
   }
-}
-@media (min-width: 320px) {
   .carousel-indicators [data-bs-target] {
-  padding-right: 0;
-  text-indent: 0;
-  border: none;
-  color: #fff;
-  margin-right: 0px;
-  margin-left:0px;
-  background-color: transparent;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.2s ease;
-  font-size: 9px;
-
-}
+    padding: 0px;
+    text-indent: 0;
+    border: none;
+    color: #fff;
+    margin-right: 8px;
+    background-color: transparent;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-size: 10px;
+  }
 }
 .carousel-caption .small>p>a {
     color: rgb(190, 34, 42);
