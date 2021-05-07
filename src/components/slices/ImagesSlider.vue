@@ -119,7 +119,7 @@ export default {
     text-indent: 0;
     border: none;
     color: #fff;
-    margin-right: 8px;
+    margin-right: 6px;
     background-color: transparent;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
