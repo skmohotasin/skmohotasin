@@ -123,7 +123,7 @@ export default {
     background-color: transparent;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 .carousel-caption .small>p>a {
