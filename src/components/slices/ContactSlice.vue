@@ -8,7 +8,7 @@
                     <input type="text" name="userName" class="form-control" placeholder="NAME" value="" required>
                 </div>
                 <select class="form-select mb-3" aria-label="Default select example">
-                  <option selected>I'M A</option>
+                  <option selected></option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
