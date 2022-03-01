@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    var element = document.querySelectorAll('.size-guide .row a');
+
+    if (element) {
+
+        element.forEach(function(el, key) {
+
+            el.addEventListener('click', function() {
+                document.querySelectorAll('.rte__table-wrapper')[key].children[0].classList.toggle("active");
+                el.classList.toggle("active");
+
+                element.forEach(function(ell, els) {
+                    if (key !== els) {
+                        ell.classList.remove('active');
+                        document.querySelectorAll('.rte__table-wrapper')[els].children[0].classList.remove('active');
+                    }
+                });
+            });
+        });
+    }
+});
